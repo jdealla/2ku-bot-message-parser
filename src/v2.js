@@ -46,6 +46,7 @@ function BotMessageParser(settings = {}) {
 	let defaultReplaceWordsList = require("./replaceWords.js");
 	let namesList = settings.namesList || undefined;
 	let teamsList = settings.teamsList || undefined;
+	let playersList = settings.playersList || undefined;
 	var commandPrefix = settings.commandPrefix || "!";
 	let botUserId = settings.botUserId || undefined
 	let model = settings.model;
@@ -96,6 +97,7 @@ function BotMessageParser(settings = {}) {
 		this.arguments = [];
 		this.names = [];
 		this.teams = [];
+		this.players = [];
 		this.hasIntent = undefined
 		this.intent = undefined;
 		this.numEntities = 0;
@@ -183,6 +185,7 @@ function BotMessageParser(settings = {}) {
 		else this.commandOnly = false
 		if (namesList) this.names = findNames(this.clean, namesList)
 		if (teamsList) this.teams = findTeams(this.clean, teamsList)
+		if (playersList) this.playersList = findPlayers(this.clean, playersList)
 
 		// push words to arguments
 		if (this.text) this.arguments = this.text.replace(/\s+/g, ' ').split(" ");
@@ -253,6 +256,7 @@ function BotMessageParser(settings = {}) {
 			arguments: this.arguments,
 			names: this.names,
 			teams: this.teams,
+			players: this.players,
 			hasIntent: this.hasIntent,
 			intent: this.intent,
 			numEntities: this.numEntities,
@@ -330,6 +334,23 @@ function findTeams(string, teamsList) {
 	string = string.toLowerCase();
 	let matches = []
 	teamsList.forEach(name => {
+		name = name.toLowerCase();
+		let match
+		console.log(name);
+		if (string.match(name)) {
+			match = string.match(name)[0]
+			matches.push(match)
+		}
+	})
+	return matches
+};
+
+function findPlayers(string, playersList) {
+	if (!Array.isArray(playersList)) throw new Error("playersList must be an array")
+	if (!string) return
+	string = string.toLowerCase();
+	let matches = []
+	playersList.forEach(name => {
 		name = name.toLowerCase();
 		let match
 		console.log(name);
