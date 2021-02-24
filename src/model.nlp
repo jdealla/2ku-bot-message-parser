@@ -1,0 +1,1284 @@
+{
+  "settings": {
+    "languages": [
+      "en"
+    ],
+    "nlu": {
+      "log": false,
+      "useNoneFeature": true,
+      "trainByDomain": false,
+      "useNeural": false,
+      "keepStopwords": true,
+      "nluClassName": "BrainNLU",
+      "spellcheck": true
+    }
+  },
+  "nluManager": {
+    "settings": {
+      "log": false,
+      "useNoneFeature": true,
+      "trainByDomain": false,
+      "useNeural": false,
+      "keepStopwords": true,
+      "nluClassName": "BrainNLU",
+      "spellcheck": true
+    },
+    "languages": [
+      "en"
+    ],
+    "intentDomains": {},
+    "domainManagers": {
+      "en": {
+        "settings": {
+          "language": "en",
+          "log": false,
+          "useNoneFeature": true,
+          "trainByDomain": false,
+          "useNeural": false,
+          "keepStopwords": true,
+          "nluClassName": "BrainNLU",
+          "spellcheck": true,
+          "config": {
+            "activation": "leaky-relu",
+            "hiddenLayers": [],
+            "iterations": 20000,
+            "learningRate": 0.7,
+            "errorThresh": 0.00005,
+            "momentum": 0.5,
+            "deltaErrorThresh": 0.000001,
+            "maxDecimals": 9,
+            "leakyReluAlpha": 0.08,
+            "log": false,
+            "timeout": 120000
+          }
+        },
+        "language": "en",
+        "nluClassName": "BrainNLU",
+        "useMasterDomain": true,
+        "trainByDomain": false,
+        "keepStopwords": true,
+        "stemDict": {
+          "on,turn": {
+            "domain": "default",
+            "intent": "on"
+          },
+          "off,turn": {
+            "domain": "default",
+            "intent": "off"
+          },
+          "the": {
+            "domain": "default",
+            "intent": "None"
+          },
+          "on,switch": {
+            "domain": "default",
+            "intent": "on"
+          },
+          "off,switch": {
+            "domain": "default",
+            "intent": "off"
+          },
+          "switch": {
+            "domain": "default",
+            "intent": "None"
+          },
+          "on,power": {
+            "domain": "default",
+            "intent": "on"
+          },
+          "off,power": {
+            "domain": "default",
+            "intent": "off"
+          },
+          "power": {
+            "domain": "default",
+            "intent": "None"
+          },
+          "on": {
+            "domain": "default",
+            "intent": "on"
+          },
+          "off": {
+            "domain": "default",
+            "intent": "off"
+          },
+          "can": {
+            "domain": "default",
+            "intent": "None"
+          },
+          "you": {
+            "domain": "default",
+            "intent": "None"
+          },
+          "pleas": {
+            "domain": "default",
+            "intent": "None"
+          },
+          "is": {
+            "domain": "default",
+            "intent": "None"
+          },
+          "a": {
+            "domain": "default",
+            "intent": "None"
+          },
+          "and": {
+            "domain": "default",
+            "intent": "None"
+          },
+          "if": {
+            "domain": "default",
+            "intent": "None"
+          }
+        },
+        "intentDict": {
+          "on": "default",
+          "off": "default",
+          "None": "default"
+        },
+        "useStemDict": true,
+        "domains": {
+          "master_domain": {
+            "settings": {
+              "language": "en",
+              "log": false,
+              "useNoneFeature": true,
+              "trainByDomain": false,
+              "useNeural": false,
+              "keepStopwords": true,
+              "nluClassName": "BrainNLU",
+              "spellcheck": true,
+              "config": {
+                "activation": "leaky-relu",
+                "hiddenLayers": [],
+                "iterations": 20000,
+                "learningRate": 0.7,
+                "errorThresh": 0.00005,
+                "momentum": 0.5,
+                "deltaErrorThresh": 0.000001,
+                "maxDecimals": 9,
+                "leakyReluAlpha": 0.08,
+                "log": false,
+                "timeout": 120000
+              }
+            },
+            "language": "en",
+            "keepStopwords": "en",
+            "docs": [
+              {
+                "intent": "off",
+                "tokens": [
+                  "turn",
+                  "off"
+                ]
+              },
+              {
+                "intent": "None",
+                "tokens": [
+                  "the"
+                ]
+              },
+              {
+                "intent": "on",
+                "tokens": [
+                  "switch",
+                  "on"
+                ]
+              },
+              {
+                "intent": "off",
+                "tokens": [
+                  "switch",
+                  "off"
+                ]
+              },
+              {
+                "intent": "None",
+                "tokens": [
+                  "switch"
+                ]
+              },
+              {
+                "intent": "on",
+                "tokens": [
+                  "power",
+                  "on"
+                ]
+              },
+              {
+                "intent": "off",
+                "tokens": [
+                  "power",
+                  "off"
+                ]
+              },
+              {
+                "intent": "None",
+                "tokens": [
+                  "power"
+                ]
+              },
+              {
+                "intent": "on",
+                "tokens": [
+                  "on"
+                ]
+              },
+              {
+                "intent": "off",
+                "tokens": [
+                  "off"
+                ]
+              },
+              {
+                "intent": "None",
+                "tokens": [
+                  "can"
+                ]
+              },
+              {
+                "intent": "on",
+                "tokens": [
+                  "turn",
+                  "on"
+                ]
+              },
+              {
+                "intent": "off",
+                "tokens": [
+                  "turn",
+                  "off"
+                ]
+              },
+              {
+                "intent": "on",
+                "tokens": [
+                  "switch",
+                  "on"
+                ]
+              },
+              {
+                "intent": "off",
+                "tokens": [
+                  "switch",
+                  "off"
+                ]
+              },
+              {
+                "intent": "on",
+                "tokens": [
+                  "power",
+                  "on"
+                ]
+              },
+              {
+                "intent": "off",
+                "tokens": [
+                  "power",
+                  "off"
+                ]
+              },
+              {
+                "intent": "off",
+                "tokens": [
+                  "off"
+                ]
+              },
+              {
+                "intent": "None",
+                "tokens": [
+                  "is"
+                ]
+              },
+              {
+                "intent": "off",
+                "tokens": [
+                  "turn",
+                  "off"
+                ]
+              },
+              {
+                "intent": "None",
+                "tokens": [
+                  "the"
+                ]
+              },
+              {
+                "intent": "on",
+                "tokens": [
+                  "switch",
+                  "on"
+                ]
+              },
+              {
+                "intent": "off",
+                "tokens": [
+                  "switch",
+                  "off"
+                ]
+              },
+              {
+                "intent": "off",
+                "tokens": [
+                  "power",
+                  "off"
+                ]
+              },
+              {
+                "intent": "on",
+                "tokens": [
+                  "on"
+                ]
+              },
+              {
+                "intent": "off",
+                "tokens": [
+                  "off"
+                ]
+              },
+              {
+                "intent": "None",
+                "tokens": [
+                  "is"
+                ]
+              },
+              {
+                "intent": "off",
+                "tokens": [
+                  "turn",
+                  "off"
+                ]
+              },
+              {
+                "intent": "on",
+                "tokens": [
+                  "switch",
+                  "on"
+                ]
+              },
+              {
+                "intent": "off",
+                "tokens": [
+                  "switch",
+                  "off"
+                ]
+              },
+              {
+                "intent": "on",
+                "tokens": [
+                  "power",
+                  "on"
+                ]
+              },
+              {
+                "intent": "off",
+                "tokens": [
+                  "power",
+                  "off"
+                ]
+              },
+              {
+                "intent": "on",
+                "tokens": [
+                  "on"
+                ]
+              },
+              {
+                "intent": "None",
+                "tokens": [
+                  "you"
+                ]
+              },
+              {
+                "intent": "None",
+                "tokens": [
+                  "is"
+                ]
+              },
+              {
+                "intent": "None",
+                "tokens": [
+                  "a"
+                ]
+              },
+              {
+                "intent": "None",
+                "tokens": [
+                  "and"
+                ]
+              },
+              {
+                "intent": "None",
+                "tokens": [
+                  "if"
+                ]
+              },
+              {
+                "intent": "off",
+                "tokens": [
+                  "turn",
+                  "off"
+                ]
+              },
+              {
+                "intent": "off",
+                "tokens": [
+                  "switch",
+                  "off"
+                ]
+              },
+              {
+                "intent": "on",
+                "tokens": [
+                  "power",
+                  "on"
+                ]
+              },
+              {
+                "intent": "off",
+                "tokens": [
+                  "power",
+                  "off"
+                ]
+              },
+              {
+                "intent": "None",
+                "tokens": [
+                  "power"
+                ]
+              },
+              {
+                "intent": "on",
+                "tokens": [
+                  "on"
+                ]
+              },
+              {
+                "intent": "off",
+                "tokens": [
+                  "off"
+                ]
+              },
+              {
+                "intent": "None",
+                "tokens": [
+                  "can"
+                ]
+              },
+              {
+                "intent": "None",
+                "tokens": [
+                  "you"
+                ]
+              },
+              {
+                "intent": "None",
+                "tokens": [
+                  "if"
+                ]
+              }
+            ],
+            "features": {
+              "turn": 6,
+              "on": 13,
+              "off": 19,
+              "the": 3,
+              "switch": 12,
+              "power": 11,
+              "is": 2,
+              "a": 2,
+              "if": 3,
+              "pleas": 1,
+              "can": 1,
+              "you": 1
+            },
+            "isEditing": false,
+            "className": "BrainNLU",
+            "classifier": {
+              "className": "BrainClassifier",
+              "settings": {
+                "language": "en",
+                "log": false,
+                "useNoneFeature": true,
+                "trainByDomain": false,
+                "useNeural": false,
+                "keepStopwords": true,
+                "nluClassName": "BrainNLU",
+                "spellcheck": true,
+                "config": {
+                  "activation": "leaky-relu",
+                  "hiddenLayers": [],
+                  "iterations": 20000,
+                  "learningRate": 0.7,
+                  "errorThresh": 0.00005,
+                  "momentum": 0.5,
+                  "deltaErrorThresh": 0.000001,
+                  "maxDecimals": 9,
+                  "leakyReluAlpha": 0.08,
+                  "log": false,
+                  "timeout": 120000
+                }
+              },
+              "labels": [],
+              "network": {
+                "sizes": [
+                  12,
+                  3
+                ],
+                "layers": [
+                  {
+                    "turn": {},
+                    "off": {},
+                    "the": {},
+                    "switch": {},
+                    "on": {},
+                    "power": {},
+                    "can": {},
+                    "is": {},
+                    "you": {},
+                    "a": {},
+                    "nonefeature": {},
+                    "if": {}
+                  },
+                  {
+                    "off": {
+                      "bias": 0.000017496,
+                      "weights": {
+                        "turn": -2.22e-7,
+                        "off": 12.499982834,
+                        "the": -0.648603082,
+                        "switch": -0.000002689,
+                        "on": -2.393258333,
+                        "power": -0.000005338,
+                        "can": -0.623212934,
+                        "is": -0.942297459,
+                        "you": -0.669900358,
+                        "a": -0.47212258,
+                        "nonefeature": -0.507980466,
+                        "if": -0.609847844
+                      }
+                    },
+                    "None": {
+                      "bias": 14.022643115,
+                      "weights": {
+                        "turn": -1.329218626,
+                        "off": -13.998906136,
+                        "the": -1.465517402,
+                        "switch": -1.421731114,
+                        "on": -13.99849987,
+                        "power": -1.494122267,
+                        "can": -1.487847567,
+                        "is": -1.472958565,
+                        "you": -1.482113004,
+                        "a": -1.404580712,
+                        "nonefeature": -13.574835777,
+                        "if": -1.512849569
+                      }
+                    },
+                    "on": {
+                      "bias": 0.000014461,
+                      "weights": {
+                        "turn": 3.72e-7,
+                        "off": -2.518304348,
+                        "the": -0.614092112,
+                        "switch": -0.000002556,
+                        "on": 12.499985695,
+                        "power": -0.000005011,
+                        "can": -0.613637745,
+                        "is": -0.90903151,
+                        "you": -0.690134346,
+                        "a": -0.496360898,
+                        "nonefeature": -0.531723261,
+                        "if": -0.629653811
+                      }
+                    }
+                  }
+                ],
+                "trainOpts": {
+                  "iterations": 20000,
+                  "errorThresh": 0.00005,
+                  "fixedError": false,
+                  "deltaErrorThresh": 0.000001,
+                  "learningRate": 0.7,
+                  "momentum": 0.5,
+                  "leakyReluAlpha": 0.08,
+                  "maxDecimals": 9,
+                  "log": false
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "extraSentences": [
+      [
+        "en",
+        "turn on"
+      ],
+      [
+        "en",
+        "turn off"
+      ],
+      [
+        "en",
+        "the"
+      ],
+      [
+        "en",
+        "switch on"
+      ],
+      [
+        "en",
+        "switch off"
+      ],
+      [
+        "en",
+        "switch"
+      ],
+      [
+        "en",
+        "power on"
+      ],
+      [
+        "en",
+        "power off"
+      ],
+      [
+        "en",
+        "power"
+      ],
+      [
+        "en",
+        "on"
+      ],
+      [
+        "en",
+        "off"
+      ],
+      [
+        "en",
+        "can"
+      ],
+      [
+        "en",
+        "you"
+      ],
+      [
+        "en",
+        "please"
+      ],
+      [
+        "en",
+        "is"
+      ],
+      [
+        "en",
+        "a"
+      ],
+      [
+        "en",
+        "and"
+      ],
+      [
+        "en",
+        "if"
+      ],
+      [
+        "en",
+        "turn on"
+      ],
+      [
+        "en",
+        "turn off"
+      ],
+      [
+        "en",
+        "the"
+      ],
+      [
+        "en",
+        "switch on"
+      ],
+      [
+        "en",
+        "switch off"
+      ],
+      [
+        "en",
+        "switch"
+      ],
+      [
+        "en",
+        "power on"
+      ],
+      [
+        "en",
+        "power off"
+      ],
+      [
+        "en",
+        "power"
+      ],
+      [
+        "en",
+        "on"
+      ],
+      [
+        "en",
+        "off"
+      ],
+      [
+        "en",
+        "can"
+      ],
+      [
+        "en",
+        "you"
+      ],
+      [
+        "en",
+        "please"
+      ],
+      [
+        "en",
+        "is"
+      ],
+      [
+        "en",
+        "a"
+      ],
+      [
+        "en",
+        "and"
+      ],
+      [
+        "en",
+        "if"
+      ],
+      [
+        "en",
+        "turn on"
+      ],
+      [
+        "en",
+        "turn off"
+      ],
+      [
+        "en",
+        "the"
+      ],
+      [
+        "en",
+        "switch on"
+      ],
+      [
+        "en",
+        "switch off"
+      ],
+      [
+        "en",
+        "switch"
+      ],
+      [
+        "en",
+        "power on"
+      ],
+      [
+        "en",
+        "power off"
+      ],
+      [
+        "en",
+        "power"
+      ],
+      [
+        "en",
+        "on"
+      ],
+      [
+        "en",
+        "off"
+      ],
+      [
+        "en",
+        "can"
+      ],
+      [
+        "en",
+        "you"
+      ],
+      [
+        "en",
+        "please"
+      ],
+      [
+        "en",
+        "is"
+      ],
+      [
+        "en",
+        "a"
+      ],
+      [
+        "en",
+        "and"
+      ],
+      [
+        "en",
+        "if"
+      ],
+      [
+        "en",
+        "turn on"
+      ],
+      [
+        "en",
+        "turn off"
+      ],
+      [
+        "en",
+        "the"
+      ],
+      [
+        "en",
+        "switch on"
+      ],
+      [
+        "en",
+        "switch off"
+      ],
+      [
+        "en",
+        "switch"
+      ],
+      [
+        "en",
+        "power on"
+      ],
+      [
+        "en",
+        "power off"
+      ],
+      [
+        "en",
+        "power"
+      ],
+      [
+        "en",
+        "on"
+      ],
+      [
+        "en",
+        "off"
+      ],
+      [
+        "en",
+        "can"
+      ],
+      [
+        "en",
+        "you"
+      ],
+      [
+        "en",
+        "please"
+      ],
+      [
+        "en",
+        "is"
+      ],
+      [
+        "en",
+        "a"
+      ],
+      [
+        "en",
+        "and"
+      ],
+      [
+        "en",
+        "if"
+      ],
+      [
+        "en",
+        "turn on"
+      ],
+      [
+        "en",
+        "turn off"
+      ],
+      [
+        "en",
+        "the"
+      ],
+      [
+        "en",
+        "switch on"
+      ],
+      [
+        "en",
+        "switch off"
+      ],
+      [
+        "en",
+        "switch"
+      ],
+      [
+        "en",
+        "power on"
+      ],
+      [
+        "en",
+        "power off"
+      ],
+      [
+        "en",
+        "power"
+      ],
+      [
+        "en",
+        "on"
+      ],
+      [
+        "en",
+        "off"
+      ],
+      [
+        "en",
+        "can"
+      ],
+      [
+        "en",
+        "you"
+      ],
+      [
+        "en",
+        "please"
+      ],
+      [
+        "en",
+        "is"
+      ],
+      [
+        "en",
+        "a"
+      ],
+      [
+        "en",
+        "and"
+      ],
+      [
+        "en",
+        "if"
+      ]
+    ]
+  },
+  "nerManager": {
+    "settings": {},
+    "threshold": 0.8,
+    "builtins": [
+      "Number",
+      "Ordinal",
+      "Percentage",
+      "Age",
+      "Currency",
+      "Dimension",
+      "Temperature",
+      "DateTime",
+      "PhoneNumber",
+      "IpAddress",
+      "Boolean",
+      "Email",
+      "Hashtag",
+      "URL"
+    ],
+    "namedEntities": {
+      "light": {
+        "type": "enum",
+        "name": "light",
+        "localeFallback": {
+          "*": "en"
+        },
+        "locales": {
+          "en": {
+            "cornerLamp": [
+              "cornerlamp",
+              "corner lamp",
+              "corner",
+              "corner light",
+              "cornerlight",
+              "cornerlamp",
+              "corner lamp",
+              "corner",
+              "corner light",
+              "cornerlight",
+              "cornerlamp",
+              "corner lamp",
+              "corner",
+              "corner light",
+              "cornerlight",
+              "cornerlamp",
+              "corner lamp",
+              "corner",
+              "corner light",
+              "cornerlight",
+              "cornerlamp",
+              "corner lamp",
+              "corner",
+              "corner light",
+              "cornerlight"
+            ],
+            "studioLight": [
+              "studio",
+              "studio light",
+              "studio lamp",
+              "studiolamp",
+              "studio",
+              "studio light",
+              "studio lamp",
+              "studiolamp",
+              "studio",
+              "studio light",
+              "studio lamp",
+              "studiolamp",
+              "studio",
+              "studio light",
+              "studio lamp",
+              "studiolamp",
+              "studio",
+              "studio light",
+              "studio lamp",
+              "studiolamp"
+            ],
+            "lonelyLamp": [
+              "lonelylamp",
+              "lonely",
+              "lonely lamp",
+              "lonely light",
+              "lonelylamp",
+              "lonely",
+              "lonely lamp",
+              "lonely light",
+              "lonelylamp",
+              "lonely",
+              "lonely lamp",
+              "lonely light",
+              "lonelylamp",
+              "lonely",
+              "lonely lamp",
+              "lonely light",
+              "lonelylamp",
+              "lonely",
+              "lonely lamp",
+              "lonely light"
+            ],
+            "closetLamp": [
+              "closet",
+              "closetlight",
+              "closet lamp",
+              "closet light",
+              "closet",
+              "closetlight",
+              "closet lamp",
+              "closet light",
+              "closet",
+              "closetlight",
+              "closet lamp",
+              "closet light",
+              "closet",
+              "closetlight",
+              "closet lamp",
+              "closet light",
+              "closet",
+              "closetlight",
+              "closet lamp",
+              "closet light"
+            ],
+            "sconce": [
+              "sconce",
+              "scone",
+              "sconce light",
+              "wall light",
+              "light over the hard drives",
+              "hard drives",
+              "server",
+              "sconce",
+              "scone",
+              "sconce light",
+              "wall light",
+              "light over the hard drives",
+              "hard drives",
+              "server",
+              "sconce",
+              "scone",
+              "sconce light",
+              "wall light",
+              "light over the hard drives",
+              "hard drives",
+              "server",
+              "sconce",
+              "scone",
+              "sconce light",
+              "wall light",
+              "light over the hard drives",
+              "hard drives",
+              "server",
+              "sconce",
+              "scone",
+              "sconce light",
+              "wall light",
+              "light over the hard drives",
+              "hard drives",
+              "server"
+            ],
+            "storage": [
+              "storage",
+              "storage room",
+              "storage light",
+              "back room",
+              "storage",
+              "storage room",
+              "storage light",
+              "back room",
+              "storage",
+              "storage room",
+              "storage light",
+              "back room",
+              "storage",
+              "storage room",
+              "storage light",
+              "back room",
+              "storage",
+              "storage room",
+              "storage light",
+              "back room"
+            ]
+          }
+        }
+      },
+      "group": {
+        "type": "enum",
+        "name": "group",
+        "localeFallback": {
+          "*": "en"
+        },
+        "locales": {
+          "en": {
+            "all": [
+              "all",
+              "all lights",
+              "everything",
+              "all the lights",
+              "lights",
+              "all",
+              "all lights",
+              "everything",
+              "all the lights",
+              "lights",
+              "all",
+              "all lights",
+              "everything",
+              "all the lights",
+              "lights",
+              "all",
+              "all lights",
+              "everything",
+              "all the lights",
+              "lights",
+              "all",
+              "all lights",
+              "everything",
+              "all the lights",
+              "lights"
+            ]
+          }
+        }
+      },
+      "color": {
+        "type": "enum",
+        "name": "color",
+        "localeFallback": {
+          "*": "en"
+        },
+        "locales": {
+          "en": {
+            "red": [
+              "red",
+              "red",
+              "red",
+              "red",
+              "red"
+            ],
+            "lightRed": [
+              "light red",
+              "light red",
+              "light red",
+              "light red",
+              "light red"
+            ],
+            "blue": [
+              "blue",
+              "blue",
+              "blue",
+              "blue",
+              "blue"
+            ],
+            "lightBlue": [
+              "light blue",
+              "light blue",
+              "light blue",
+              "light blue",
+              "light blue"
+            ],
+            "yellow": [
+              "yellow",
+              "yellow",
+              "yellow",
+              "yellow",
+              "yellow"
+            ],
+            "purple": [
+              "purple",
+              "purple",
+              "purple",
+              "purple",
+              "purple"
+            ],
+            "lightPurpble": [
+              "light purple",
+              "light purple",
+              "light purple",
+              "light purple",
+              "light purple"
+            ]
+          }
+        }
+      },
+      "intensity": {
+        "type": "enum",
+        "name": "intensity",
+        "localeFallback": {
+          "*": "en"
+        },
+        "locales": {
+          "en": {
+            "dim": [
+              "dim",
+              "dim",
+              "dim",
+              "dim",
+              "dim"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "slotManager": {},
+  "responses": {},
+  "actions": {},
+  "utteranceDict": {
+    "?": "help"
+  }
+}

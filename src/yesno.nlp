@@ -1,0 +1,3197 @@
+{
+  "settings": {
+    "languages": [
+      "en"
+    ],
+    "nlu": {
+      "log": false,
+      "useNoneFeature": true,
+      "trainByDomain": false,
+      "useNeural": false,
+      "keepStopwords": true,
+      "spellcheck": true
+    },
+    "ner": {
+      "builtins": []
+    }
+  },
+  "nluManager": {
+    "settings": {
+      "log": false,
+      "useNoneFeature": true,
+      "trainByDomain": false,
+      "useNeural": false,
+      "keepStopwords": true,
+      "spellcheck": true
+    },
+    "languages": [
+      "en"
+    ],
+    "intentDomains": {},
+    "domainManagers": {
+      "en": {
+        "settings": {
+          "language": "en",
+          "log": false,
+          "useNoneFeature": true,
+          "trainByDomain": false,
+          "useNeural": false,
+          "keepStopwords": true,
+          "spellcheck": true,
+          "config": {
+            "activation": "leaky-relu",
+            "hiddenLayers": [],
+            "iterations": 20000,
+            "learningRate": 0.7,
+            "errorThresh": 0.00005,
+            "momentum": 0.5,
+            "deltaErrorThresh": 0.000001,
+            "maxDecimals": 9,
+            "leakyReluAlpha": 0.08,
+            "log": false,
+            "timeout": 120000
+          }
+        },
+        "language": "en",
+        "nluClassName": "BrainNLU",
+        "useMasterDomain": true,
+        "trainByDomain": false,
+        "keepStopwords": true,
+        "stemDict": {
+          "absolut": {
+            "domain": "default",
+            "intent": "yes"
+          },
+          "affirm": {
+            "domain": "default",
+            "intent": "yes"
+          },
+          "agre": {
+            "domain": "default",
+            "intent": "yes"
+          },
+          "alright": {
+            "domain": "default",
+            "intent": "yes"
+          },
+          "alrighti": {
+            "domain": "default",
+            "intent": "yes"
+          },
+          "all,by,mean": {
+            "domain": "default",
+            "intent": "yes"
+          },
+          "certain": {
+            "domain": "default",
+            "intent": "yes"
+          },
+          "confirm": {
+            "domain": "default",
+            "intent": "yes"
+          },
+          "correct": {
+            "domain": "default",
+            "intent": "yes"
+          },
+          "defin": {
+            "domain": "default",
+            "intent": "yes"
+          },
+          "defini": {
+            "domain": "default",
+            "intent": "yes"
+          },
+          "definit": {
+            "domain": "default",
+            "intent": "yes"
+          },
+          "fine": {
+            "domain": "default",
+            "intent": "yes"
+          },
+          "fo,sho": {
+            "domain": "default",
+            "intent": "yes"
+          },
+          "for,sure": {
+            "domain": "default",
+            "intent": "yes"
+          },
+          "fuck,yea": {
+            "domain": "default",
+            "intent": "yes"
+          },
+          "fuck,yes": {
+            "domain": "default",
+            "intent": "yes"
+          },
+          "glad": {
+            "domain": "default",
+            "intent": "yes"
+          },
+          "ahead,go": {
+            "domain": "default",
+            "intent": "yes"
+          },
+          "hell,yea": {
+            "domain": "default",
+            "intent": "yes"
+          },
+          "hell,yeah": {
+            "domain": "default",
+            "intent": "yes"
+          },
+          "hell,yes": {
+            "domain": "default",
+            "intent": "yes"
+          },
+          "id,love,to": {
+            "domain": "default",
+            "intent": "yes"
+          },
+          "down,im": {
+            "domain": "default",
+            "intent": "yes"
+          },
+          "inde": {
+            "domain": "default",
+            "intent": "yes"
+          },
+          "indubit": {
+            "domain": "default",
+            "intent": "yes"
+          },
+          "k": {
+            "domain": "default",
+            "intent": "yes"
+          },
+          "kk": {
+            "domain": "default",
+            "intent": "yes"
+          },
+          "doubt,no": {
+            "domain": "default",
+            "intent": "yes"
+          },
+          "ok": {
+            "domain": "default",
+            "intent": "yes"
+          },
+          "okay": {
+            "domain": "default",
+            "intent": "yes"
+          },
+          "doki,oki": {
+            "domain": "default",
+            "intent": "yes"
+          },
+          "oki": {
+            "domain": "default",
+            "intent": "yes"
+          },
+          "oui": {
+            "domain": "default",
+            "intent": "yes"
+          },
+          "right": {
+            "domain": "default",
+            "intent": "yes"
+          },
+          "good,sound": {
+            "domain": "default",
+            "intent": "yes"
+          },
+          "sure,thing": {
+            "domain": "default",
+            "intent": "yes"
+          },
+          "sure": {
+            "domain": "default",
+            "intent": "yes"
+          },
+          "right,that": {
+            "domain": "default",
+            "intent": "yes"
+          },
+          "total": {
+            "domain": "default",
+            "intent": "yes"
+          },
+          "tote": {
+            "domain": "default",
+            "intent": "yes"
+          },
+          "uh,yea": {
+            "domain": "default",
+            "intent": "yes"
+          },
+          "uh,yes": {
+            "domain": "default",
+            "intent": "yes"
+          },
+          "uhm,yea": {
+            "domain": "default",
+            "intent": "yes"
+          },
+          "uhm,yes": {
+            "domain": "default",
+            "intent": "yes"
+          },
+          "um,yea": {
+            "domain": "default",
+            "intent": "yes"
+          },
+          "um,yes": {
+            "domain": "default",
+            "intent": "yes"
+          },
+          "umm,yea": {
+            "domain": "default",
+            "intent": "yes"
+          },
+          "umm,yes": {
+            "domain": "default",
+            "intent": "yes"
+          },
+          "veri,well": {
+            "domain": "default",
+            "intent": "yes"
+          },
+          "ya": {
+            "domain": "default",
+            "intent": "yes"
+          },
+          "ye": {
+            "domain": "default",
+            "intent": "yes"
+          },
+          "yea": {
+            "domain": "default",
+            "intent": "yes"
+          },
+          "yeaa": {
+            "domain": "default",
+            "intent": "yes"
+          },
+          "yeaaa": {
+            "domain": "default",
+            "intent": "yes"
+          },
+          "yeaaaa": {
+            "domain": "default",
+            "intent": "yes"
+          },
+          "yeah": {
+            "domain": "default",
+            "intent": "yes"
+          },
+          "yee": {
+            "domain": "default",
+            "intent": "yes"
+          },
+          "yep": {
+            "domain": "default",
+            "intent": "yes"
+          },
+          "pleas,yes": {
+            "domain": "default",
+            "intent": "yes"
+          },
+          "sir,yes": {
+            "domain": "default",
+            "intent": "yes"
+          },
+          "yes": {
+            "domain": "default",
+            "intent": "yes"
+          },
+          "yess": {
+            "domain": "default",
+            "intent": "yes"
+          },
+          "yessir": {
+            "domain": "default",
+            "intent": "yes"
+          },
+          "yesss": {
+            "domain": "default",
+            "intent": "yes"
+          },
+          "yessss": {
+            "domain": "default",
+            "intent": "yes"
+          },
+          "yezzir": {
+            "domain": "default",
+            "intent": "yes"
+          },
+          "yis": {
+            "domain": "default",
+            "intent": "yes"
+          },
+          "bet,you": {
+            "domain": "default",
+            "intent": "yes"
+          },
+          "yup": {
+            "domain": "default",
+            "intent": "yes"
+          },
+          "ok_hand": {
+            "domain": "default",
+            "intent": "yes"
+          },
+          "thumbsup": {
+            "domain": "default",
+            "intent": "yes"
+          },
+          "fals": {
+            "domain": "default",
+            "intent": "no"
+          },
+          "fuck,no": {
+            "domain": "default",
+            "intent": "no"
+          },
+          "hell,nah": {
+            "domain": "default",
+            "intent": "no"
+          },
+          "hell,no": {
+            "domain": "default",
+            "intent": "no"
+          },
+          "dont,i,so,think": {
+            "domain": "default",
+            "intent": "no"
+          },
+          "nah": {
+            "domain": "default",
+            "intent": "no"
+          },
+          "no,thank,you": {
+            "domain": "default",
+            "intent": "no"
+          },
+          "no,thank": {
+            "domain": "default",
+            "intent": "no"
+          },
+          "no,way": {
+            "domain": "default",
+            "intent": "no"
+          },
+          "no": {
+            "domain": "default",
+            "intent": "no"
+          },
+          "nono": {
+            "domain": "default",
+            "intent": "no"
+          },
+          "nonono": {
+            "domain": "default",
+            "intent": "no"
+          },
+          "noo": {
+            "domain": "default",
+            "intent": "no"
+          },
+          "nooo": {
+            "domain": "default",
+            "intent": "no"
+          },
+          "noooo": {
+            "domain": "default",
+            "intent": "no"
+          },
+          "nooooo": {
+            "domain": "default",
+            "intent": "no"
+          },
+          "noooooo": {
+            "domain": "default",
+            "intent": "no"
+          },
+          "nooooooo": {
+            "domain": "default",
+            "intent": "no"
+          },
+          "noooooooo": {
+            "domain": "default",
+            "intent": "no"
+          },
+          "nooooooooo": {
+            "domain": "default",
+            "intent": "no"
+          },
+          "nope": {
+            "domain": "default",
+            "intent": "no"
+          },
+          "not,now": {
+            "domain": "default",
+            "intent": "no"
+          },
+          "wrong": {
+            "domain": "default",
+            "intent": "no"
+          },
+          "nop": {
+            "domain": "default",
+            "intent": "no"
+          },
+          "no,um": {
+            "domain": "default",
+            "intent": "no"
+          },
+          "no,uh": {
+            "domain": "default",
+            "intent": "no"
+          },
+          "no,umm": {
+            "domain": "default",
+            "intent": "no"
+          },
+          "no,uhh": {
+            "domain": "default",
+            "intent": "no"
+          },
+          "hmm,no": {
+            "domain": "default",
+            "intent": "no"
+          },
+          "mayb": {
+            "domain": "default",
+            "intent": "maybe"
+          },
+          "see,well": {
+            "domain": "default",
+            "intent": "maybe"
+          },
+          "i,so,think": {
+            "domain": "default",
+            "intent": "maybe"
+          },
+          "perhap": {
+            "domain": "default",
+            "intent": "maybe"
+          },
+          "possibl": {
+            "domain": "default",
+            "intent": "maybe"
+          },
+          "potenti": {
+            "domain": "default",
+            "intent": "maybe"
+          },
+          "see,shall,we": {
+            "domain": "default",
+            "intent": "maybe"
+          },
+          "perchanc": {
+            "domain": "default",
+            "intent": "maybe"
+          },
+          "be,could,it": {
+            "domain": "default",
+            "intent": "maybe"
+          },
+          "be,could": {
+            "domain": "default",
+            "intent": "maybe"
+          },
+          "mayb,uh": {
+            "domain": "default",
+            "intent": "maybe"
+          },
+          "mayb,um": {
+            "domain": "default",
+            "intent": "maybe"
+          },
+          "mayb,umm": {
+            "domain": "default",
+            "intent": "maybe"
+          },
+          "mayb,uhh": {
+            "domain": "default",
+            "intent": "maybe"
+          },
+          "im,not,sure": {
+            "domain": "default",
+            "intent": "idk"
+          },
+          "idk": {
+            "domain": "default",
+            "intent": "idk"
+          },
+          "dont,i,know": {
+            "domain": "default",
+            "intent": "idk"
+          },
+          "not,sure": {
+            "domain": "default",
+            "intent": "idk"
+          },
+          "dont,i,know,realli": {
+            "domain": "default",
+            "intent": "idk"
+          },
+          "clue,have,i,no": {
+            "domain": "default",
+            "intent": "idk"
+          },
+          "have,i,idea,no": {
+            "domain": "default",
+            "intent": "idk"
+          },
+          "dunno": {
+            "domain": "default",
+            "intent": "idk"
+          },
+          "dont,know": {
+            "domain": "default",
+            "intent": "idk"
+          },
+          "not,realli,sure": {
+            "domain": "default",
+            "intent": "idk"
+          },
+          "what": {
+            "domain": "default",
+            "intent": "what"
+          },
+          "wha": {
+            "domain": "default",
+            "intent": "what"
+          },
+          "umm,what": {
+            "domain": "default",
+            "intent": "what"
+          },
+          "did,say,what,you": {
+            "domain": "default",
+            "intent": "what"
+          },
+          "about,are,talk,what,you": {
+            "domain": "default",
+            "intent": "what"
+          },
+          "huh": {
+            "domain": "default",
+            "intent": "what"
+          },
+          "again,say": {
+            "domain": "default",
+            "intent": "what"
+          },
+          "could,repeat,that,you": {
+            "domain": "default",
+            "intent": "what"
+          },
+          "about,talk,we,were,what": {
+            "domain": "default",
+            "intent": "what"
+          },
+          "about,again,talk,we,were,what": {
+            "domain": "default",
+            "intent": "what"
+          }
+        },
+        "intentDict": {
+          "yes": "default",
+          "no": "default",
+          "maybe": "default",
+          "idk": "default",
+          "what": "default"
+        },
+        "useStemDict": true,
+        "domains": {
+          "master_domain": {
+            "settings": {
+              "language": "en",
+              "log": false,
+              "useNoneFeature": true,
+              "trainByDomain": false,
+              "useNeural": false,
+              "keepStopwords": true,
+              "spellcheck": true,
+              "config": {
+                "activation": "leaky-relu",
+                "hiddenLayers": [],
+                "iterations": 20000,
+                "learningRate": 0.7,
+                "errorThresh": 0.00005,
+                "momentum": 0.5,
+                "deltaErrorThresh": 0.000001,
+                "maxDecimals": 9,
+                "leakyReluAlpha": 0.08,
+                "log": false,
+                "timeout": 120000
+              }
+            },
+            "language": "en",
+            "keepStopwords": true,
+            "docs": [
+              {
+                "intent": "yes",
+                "tokens": [
+                  "absolut"
+                ]
+              },
+              {
+                "intent": "yes",
+                "tokens": [
+                  "affirm"
+                ]
+              },
+              {
+                "intent": "yes",
+                "tokens": [
+                  "agre"
+                ]
+              },
+              {
+                "intent": "yes",
+                "tokens": [
+                  "alright"
+                ]
+              },
+              {
+                "intent": "yes",
+                "tokens": [
+                  "alrighti"
+                ]
+              },
+              {
+                "intent": "yes",
+                "tokens": [
+                  "by",
+                  "all",
+                  "mean"
+                ]
+              },
+              {
+                "intent": "yes",
+                "tokens": [
+                  "certain"
+                ]
+              },
+              {
+                "intent": "yes",
+                "tokens": [
+                  "confirm"
+                ]
+              },
+              {
+                "intent": "yes",
+                "tokens": [
+                  "correct"
+                ]
+              },
+              {
+                "intent": "yes",
+                "tokens": [
+                  "defin"
+                ]
+              },
+              {
+                "intent": "yes",
+                "tokens": [
+                  "defini"
+                ]
+              },
+              {
+                "intent": "yes",
+                "tokens": [
+                  "definit"
+                ]
+              },
+              {
+                "intent": "yes",
+                "tokens": [
+                  "fine"
+                ]
+              },
+              {
+                "intent": "yes",
+                "tokens": [
+                  "fo",
+                  "sho"
+                ]
+              },
+              {
+                "intent": "yes",
+                "tokens": [
+                  "for",
+                  "sure"
+                ]
+              },
+              {
+                "intent": "yes",
+                "tokens": [
+                  "fuck",
+                  "yea"
+                ]
+              },
+              {
+                "intent": "yes",
+                "tokens": [
+                  "fuck",
+                  "yes"
+                ]
+              },
+              {
+                "intent": "yes",
+                "tokens": [
+                  "glad"
+                ]
+              },
+              {
+                "intent": "yes",
+                "tokens": [
+                  "go",
+                  "ahead"
+                ]
+              },
+              {
+                "intent": "yes",
+                "tokens": [
+                  "hell",
+                  "yea"
+                ]
+              },
+              {
+                "intent": "yes",
+                "tokens": [
+                  "hell",
+                  "yeah"
+                ]
+              },
+              {
+                "intent": "yes",
+                "tokens": [
+                  "hell",
+                  "yes"
+                ]
+              },
+              {
+                "intent": "yes",
+                "tokens": [
+                  "id",
+                  "love",
+                  "to"
+                ]
+              },
+              {
+                "intent": "yes",
+                "tokens": [
+                  "im",
+                  "down"
+                ]
+              },
+              {
+                "intent": "yes",
+                "tokens": [
+                  "inde"
+                ]
+              },
+              {
+                "intent": "yes",
+                "tokens": [
+                  "indubit"
+                ]
+              },
+              {
+                "intent": "yes",
+                "tokens": [
+                  "k"
+                ]
+              },
+              {
+                "intent": "yes",
+                "tokens": [
+                  "kk"
+                ]
+              },
+              {
+                "intent": "yes",
+                "tokens": [
+                  "no",
+                  "doubt"
+                ]
+              },
+              {
+                "intent": "yes",
+                "tokens": [
+                  "ok"
+                ]
+              },
+              {
+                "intent": "yes",
+                "tokens": [
+                  "okay"
+                ]
+              },
+              {
+                "intent": "yes",
+                "tokens": [
+                  "oki",
+                  "doki"
+                ]
+              },
+              {
+                "intent": "yes",
+                "tokens": [
+                  "oki"
+                ]
+              },
+              {
+                "intent": "yes",
+                "tokens": [
+                  "oui"
+                ]
+              },
+              {
+                "intent": "yes",
+                "tokens": [
+                  "right"
+                ]
+              },
+              {
+                "intent": "yes",
+                "tokens": [
+                  "sound",
+                  "good"
+                ]
+              },
+              {
+                "intent": "yes",
+                "tokens": [
+                  "sure",
+                  "thing"
+                ]
+              },
+              {
+                "intent": "yes",
+                "tokens": [
+                  "sure"
+                ]
+              },
+              {
+                "intent": "yes",
+                "tokens": [
+                  "that",
+                  "right"
+                ]
+              },
+              {
+                "intent": "yes",
+                "tokens": [
+                  "total"
+                ]
+              },
+              {
+                "intent": "yes",
+                "tokens": [
+                  "tote"
+                ]
+              },
+              {
+                "intent": "yes",
+                "tokens": [
+                  "uh",
+                  "yea"
+                ]
+              },
+              {
+                "intent": "yes",
+                "tokens": [
+                  "uh",
+                  "yes"
+                ]
+              },
+              {
+                "intent": "yes",
+                "tokens": [
+                  "uhm",
+                  "yea"
+                ]
+              },
+              {
+                "intent": "yes",
+                "tokens": [
+                  "uhm",
+                  "yes"
+                ]
+              },
+              {
+                "intent": "yes",
+                "tokens": [
+                  "um",
+                  "yea"
+                ]
+              },
+              {
+                "intent": "yes",
+                "tokens": [
+                  "um",
+                  "yes"
+                ]
+              },
+              {
+                "intent": "yes",
+                "tokens": [
+                  "umm",
+                  "yea"
+                ]
+              },
+              {
+                "intent": "yes",
+                "tokens": [
+                  "umm",
+                  "yes"
+                ]
+              },
+              {
+                "intent": "yes",
+                "tokens": [
+                  "veri",
+                  "well"
+                ]
+              },
+              {
+                "intent": "yes",
+                "tokens": [
+                  "ya"
+                ]
+              },
+              {
+                "intent": "yes",
+                "tokens": [
+                  "ye"
+                ]
+              },
+              {
+                "intent": "yes",
+                "tokens": [
+                  "yea"
+                ]
+              },
+              {
+                "intent": "yes",
+                "tokens": [
+                  "yeaa"
+                ]
+              },
+              {
+                "intent": "yes",
+                "tokens": [
+                  "yeaaa"
+                ]
+              },
+              {
+                "intent": "yes",
+                "tokens": [
+                  "yeaaaa"
+                ]
+              },
+              {
+                "intent": "yes",
+                "tokens": [
+                  "yeah"
+                ]
+              },
+              {
+                "intent": "yes",
+                "tokens": [
+                  "yee"
+                ]
+              },
+              {
+                "intent": "yes",
+                "tokens": [
+                  "yep"
+                ]
+              },
+              {
+                "intent": "yes",
+                "tokens": [
+                  "yes",
+                  "pleas"
+                ]
+              },
+              {
+                "intent": "yes",
+                "tokens": [
+                  "yes",
+                  "sir"
+                ]
+              },
+              {
+                "intent": "yes",
+                "tokens": [
+                  "yes"
+                ]
+              },
+              {
+                "intent": "yes",
+                "tokens": [
+                  "yess"
+                ]
+              },
+              {
+                "intent": "yes",
+                "tokens": [
+                  "yessir"
+                ]
+              },
+              {
+                "intent": "yes",
+                "tokens": [
+                  "yesss"
+                ]
+              },
+              {
+                "intent": "yes",
+                "tokens": [
+                  "yessss"
+                ]
+              },
+              {
+                "intent": "yes",
+                "tokens": [
+                  "yezzir"
+                ]
+              },
+              {
+                "intent": "yes",
+                "tokens": [
+                  "yis"
+                ]
+              },
+              {
+                "intent": "yes",
+                "tokens": [
+                  "you",
+                  "bet"
+                ]
+              },
+              {
+                "intent": "yes",
+                "tokens": [
+                  "yup"
+                ]
+              },
+              {
+                "intent": "yes",
+                "tokens": [
+                  "ok_hand"
+                ]
+              },
+              {
+                "intent": "yes",
+                "tokens": [
+                  "thumbsup"
+                ]
+              },
+              {
+                "intent": "no",
+                "tokens": [
+                  "fals"
+                ]
+              },
+              {
+                "intent": "no",
+                "tokens": [
+                  "fuck",
+                  "no"
+                ]
+              },
+              {
+                "intent": "no",
+                "tokens": [
+                  "hell",
+                  "nah"
+                ]
+              },
+              {
+                "intent": "no",
+                "tokens": [
+                  "hell",
+                  "no"
+                ]
+              },
+              {
+                "intent": "no",
+                "tokens": [
+                  "i",
+                  "dont",
+                  "think",
+                  "so"
+                ]
+              },
+              {
+                "intent": "no",
+                "tokens": [
+                  "nah"
+                ]
+              },
+              {
+                "intent": "no",
+                "tokens": [
+                  "no",
+                  "thank",
+                  "you"
+                ]
+              },
+              {
+                "intent": "no",
+                "tokens": [
+                  "no",
+                  "thank"
+                ]
+              },
+              {
+                "intent": "no",
+                "tokens": [
+                  "no",
+                  "way"
+                ]
+              },
+              {
+                "intent": "no",
+                "tokens": [
+                  "no"
+                ]
+              },
+              {
+                "intent": "no",
+                "tokens": [
+                  "nono"
+                ]
+              },
+              {
+                "intent": "no",
+                "tokens": [
+                  "nonono"
+                ]
+              },
+              {
+                "intent": "no",
+                "tokens": [
+                  "noo"
+                ]
+              },
+              {
+                "intent": "no",
+                "tokens": [
+                  "nooo"
+                ]
+              },
+              {
+                "intent": "no",
+                "tokens": [
+                  "noooo"
+                ]
+              },
+              {
+                "intent": "no",
+                "tokens": [
+                  "nooooo"
+                ]
+              },
+              {
+                "intent": "no",
+                "tokens": [
+                  "noooooo"
+                ]
+              },
+              {
+                "intent": "no",
+                "tokens": [
+                  "nooooooo"
+                ]
+              },
+              {
+                "intent": "no",
+                "tokens": [
+                  "noooooooo"
+                ]
+              },
+              {
+                "intent": "no",
+                "tokens": [
+                  "nooooooooo"
+                ]
+              },
+              {
+                "intent": "no",
+                "tokens": [
+                  "nope"
+                ]
+              },
+              {
+                "intent": "no",
+                "tokens": [
+                  "not",
+                  "now"
+                ]
+              },
+              {
+                "intent": "no",
+                "tokens": [
+                  "wrong"
+                ]
+              },
+              {
+                "intent": "no",
+                "tokens": [
+                  "nop"
+                ]
+              },
+              {
+                "intent": "no",
+                "tokens": [
+                  "um",
+                  "no"
+                ]
+              },
+              {
+                "intent": "no",
+                "tokens": [
+                  "uh",
+                  "no"
+                ]
+              },
+              {
+                "intent": "no",
+                "tokens": [
+                  "umm",
+                  "no"
+                ]
+              },
+              {
+                "intent": "no",
+                "tokens": [
+                  "uhh",
+                  "no"
+                ]
+              },
+              {
+                "intent": "no",
+                "tokens": [
+                  "hmm",
+                  "no"
+                ]
+              },
+              {
+                "intent": "maybe",
+                "tokens": [
+                  "mayb"
+                ]
+              },
+              {
+                "intent": "maybe",
+                "tokens": [
+                  "well",
+                  "see"
+                ]
+              },
+              {
+                "intent": "maybe",
+                "tokens": [
+                  "i",
+                  "think",
+                  "so"
+                ]
+              },
+              {
+                "intent": "maybe",
+                "tokens": [
+                  "perhap"
+                ]
+              },
+              {
+                "intent": "maybe",
+                "tokens": [
+                  "possibl"
+                ]
+              },
+              {
+                "intent": "maybe",
+                "tokens": [
+                  "potenti"
+                ]
+              },
+              {
+                "intent": "maybe",
+                "tokens": [
+                  "we",
+                  "shall",
+                  "see"
+                ]
+              },
+              {
+                "intent": "maybe",
+                "tokens": [
+                  "perchanc"
+                ]
+              },
+              {
+                "intent": "maybe",
+                "tokens": [
+                  "it",
+                  "could",
+                  "be"
+                ]
+              },
+              {
+                "intent": "maybe",
+                "tokens": [
+                  "could",
+                  "be"
+                ]
+              },
+              {
+                "intent": "maybe",
+                "tokens": [
+                  "uh",
+                  "mayb"
+                ]
+              },
+              {
+                "intent": "maybe",
+                "tokens": [
+                  "um",
+                  "mayb"
+                ]
+              },
+              {
+                "intent": "maybe",
+                "tokens": [
+                  "umm",
+                  "mayb"
+                ]
+              },
+              {
+                "intent": "maybe",
+                "tokens": [
+                  "uhh",
+                  "mayb"
+                ]
+              },
+              {
+                "intent": "idk",
+                "tokens": [
+                  "im",
+                  "not",
+                  "sure"
+                ]
+              },
+              {
+                "intent": "idk",
+                "tokens": [
+                  "idk"
+                ]
+              },
+              {
+                "intent": "idk",
+                "tokens": [
+                  "i",
+                  "dont",
+                  "know"
+                ]
+              },
+              {
+                "intent": "idk",
+                "tokens": [
+                  "not",
+                  "sure"
+                ]
+              },
+              {
+                "intent": "idk",
+                "tokens": [
+                  "i",
+                  "dont",
+                  "realli",
+                  "know"
+                ]
+              },
+              {
+                "intent": "idk",
+                "tokens": [
+                  "i",
+                  "have",
+                  "no",
+                  "clue"
+                ]
+              },
+              {
+                "intent": "idk",
+                "tokens": [
+                  "i",
+                  "have",
+                  "no",
+                  "idea"
+                ]
+              },
+              {
+                "intent": "idk",
+                "tokens": [
+                  "dunno"
+                ]
+              },
+              {
+                "intent": "idk",
+                "tokens": [
+                  "dont",
+                  "know"
+                ]
+              },
+              {
+                "intent": "idk",
+                "tokens": [
+                  "not",
+                  "realli",
+                  "sure"
+                ]
+              },
+              {
+                "intent": "what",
+                "tokens": [
+                  "what"
+                ]
+              },
+              {
+                "intent": "what",
+                "tokens": [
+                  "wha"
+                ]
+              },
+              {
+                "intent": "what",
+                "tokens": [
+                  "umm",
+                  "what"
+                ]
+              },
+              {
+                "intent": "what",
+                "tokens": [
+                  "what",
+                  "did",
+                  "you",
+                  "say"
+                ]
+              },
+              {
+                "intent": "what",
+                "tokens": [
+                  "what",
+                  "are",
+                  "you",
+                  "talk",
+                  "about"
+                ]
+              },
+              {
+                "intent": "what",
+                "tokens": [
+                  "huh"
+                ]
+              },
+              {
+                "intent": "what",
+                "tokens": [
+                  "say",
+                  "again"
+                ]
+              },
+              {
+                "intent": "what",
+                "tokens": [
+                  "could",
+                  "you",
+                  "repeat",
+                  "that"
+                ]
+              },
+              {
+                "intent": "what",
+                "tokens": [
+                  "what",
+                  "were",
+                  "we",
+                  "talk",
+                  "about"
+                ]
+              },
+              {
+                "intent": "what",
+                "tokens": [
+                  "what",
+                  "were",
+                  "we",
+                  "talk",
+                  "about",
+                  "again"
+                ]
+              }
+            ],
+            "features": {
+              "absolut": 1,
+              "affirm": 1,
+              "agre": 1,
+              "alright": 1,
+              "alrighti": 1,
+              "by": 1,
+              "all": 1,
+              "mean": 1,
+              "certain": 1,
+              "confirm": 1,
+              "correct": 1,
+              "defin": 1,
+              "defini": 1,
+              "definit": 1,
+              "fine": 1,
+              "fo": 1,
+              "sho": 1,
+              "for": 1,
+              "sure": 6,
+              "fuck": 3,
+              "yea": 7,
+              "yes": 9,
+              "glad": 1,
+              "go": 1,
+              "ahead": 1,
+              "hell": 5,
+              "yeah": 2,
+              "id": 1,
+              "love": 1,
+              "to": 1,
+              "im": 2,
+              "down": 1,
+              "inde": 1,
+              "indubit": 1,
+              "k": 1,
+              "kk": 1,
+              "no": 14,
+              "doubt": 1,
+              "ok": 1,
+              "okay": 1,
+              "oki": 2,
+              "doki": 1,
+              "oui": 1,
+              "right": 2,
+              "sound": 1,
+              "good": 1,
+              "thing": 1,
+              "that": 2,
+              "total": 1,
+              "tote": 1,
+              "uh": 4,
+              "uhm": 2,
+              "um": 4,
+              "umm": 5,
+              "veri": 1,
+              "well": 2,
+              "ya": 1,
+              "ye": 1,
+              "yeaa": 1,
+              "yeaaa": 1,
+              "yeaaaa": 1,
+              "yee": 1,
+              "yep": 1,
+              "pleas": 1,
+              "sir": 1,
+              "yess": 1,
+              "yessir": 1,
+              "yesss": 1,
+              "yessss": 1,
+              "yezzir": 1,
+              "yis": 1,
+              "you": 5,
+              "bet": 1,
+              "yup": 1,
+              "ok_hand": 1,
+              "thumbsup": 1,
+              "fals": 1,
+              "nah": 2,
+              "i": 6,
+              "dont": 4,
+              "think": 2,
+              "so": 2,
+              "thank": 2,
+              "way": 1,
+              "nono": 1,
+              "nonono": 1,
+              "noo": 1,
+              "nooo": 1,
+              "noooo": 1,
+              "nooooo": 1,
+              "noooooo": 1,
+              "nooooooo": 1,
+              "noooooooo": 1,
+              "nooooooooo": 1,
+              "nope": 1,
+              "not": 4,
+              "now": 1,
+              "wrong": 1,
+              "nop": 1,
+              "uhh": 2,
+              "hmm": 1,
+              "mayb": 5,
+              "see": 2,
+              "perhap": 1,
+              "possibl": 1,
+              "potenti": 1,
+              "we": 3,
+              "shall": 1,
+              "perchanc": 1,
+              "it": 1,
+              "could": 3,
+              "be": 2,
+              "idk": 1,
+              "know": 3,
+              "realli": 2,
+              "have": 2,
+              "clue": 1,
+              "idea": 1,
+              "dunno": 1,
+              "what": 6,
+              "wha": 1,
+              "did": 1,
+              "say": 2,
+              "are": 1,
+              "talk": 3,
+              "about": 3,
+              "huh": 1,
+              "again": 2,
+              "repeat": 1,
+              "were": 2
+            },
+            "isEditing": false,
+            "className": "BrainNLU",
+            "classifier": {
+              "className": "BrainClassifier",
+              "settings": {
+                "language": "en",
+                "log": false,
+                "useNoneFeature": true,
+                "trainByDomain": false,
+                "useNeural": false,
+                "keepStopwords": true,
+                "spellcheck": true,
+                "config": {
+                  "activation": "leaky-relu",
+                  "hiddenLayers": [],
+                  "iterations": 20000,
+                  "learningRate": 0.7,
+                  "errorThresh": 0.00005,
+                  "momentum": 0.5,
+                  "deltaErrorThresh": 0.000001,
+                  "maxDecimals": 9,
+                  "leakyReluAlpha": 0.08,
+                  "log": false,
+                  "timeout": 120000
+                }
+              },
+              "labels": [],
+              "network": {
+                "sizes": [
+                  131,
+                  6
+                ],
+                "layers": [
+                  {
+                    "absolut": {},
+                    "affirm": {},
+                    "agre": {},
+                    "alright": {},
+                    "alrighti": {},
+                    "by": {},
+                    "all": {},
+                    "mean": {},
+                    "certain": {},
+                    "confirm": {},
+                    "correct": {},
+                    "defin": {},
+                    "defini": {},
+                    "definit": {},
+                    "fine": {},
+                    "fo": {},
+                    "sho": {},
+                    "for": {},
+                    "sure": {},
+                    "fuck": {},
+                    "yea": {},
+                    "yes": {},
+                    "glad": {},
+                    "go": {},
+                    "ahead": {},
+                    "hell": {},
+                    "yeah": {},
+                    "id": {},
+                    "love": {},
+                    "to": {},
+                    "im": {},
+                    "down": {},
+                    "inde": {},
+                    "indubit": {},
+                    "k": {},
+                    "kk": {},
+                    "no": {},
+                    "doubt": {},
+                    "ok": {},
+                    "okay": {},
+                    "oki": {},
+                    "doki": {},
+                    "oui": {},
+                    "right": {},
+                    "sound": {},
+                    "good": {},
+                    "thing": {},
+                    "that": {},
+                    "total": {},
+                    "tote": {},
+                    "uh": {},
+                    "uhm": {},
+                    "um": {},
+                    "umm": {},
+                    "veri": {},
+                    "well": {},
+                    "ya": {},
+                    "ye": {},
+                    "yeaa": {},
+                    "yeaaa": {},
+                    "yeaaaa": {},
+                    "yee": {},
+                    "yep": {},
+                    "pleas": {},
+                    "sir": {},
+                    "yess": {},
+                    "yessir": {},
+                    "yesss": {},
+                    "yessss": {},
+                    "yezzir": {},
+                    "yis": {},
+                    "you": {},
+                    "bet": {},
+                    "yup": {},
+                    "ok_hand": {},
+                    "thumbsup": {},
+                    "fals": {},
+                    "nah": {},
+                    "i": {},
+                    "dont": {},
+                    "think": {},
+                    "so": {},
+                    "thank": {},
+                    "way": {},
+                    "nono": {},
+                    "nonono": {},
+                    "noo": {},
+                    "nooo": {},
+                    "noooo": {},
+                    "nooooo": {},
+                    "noooooo": {},
+                    "nooooooo": {},
+                    "noooooooo": {},
+                    "nooooooooo": {},
+                    "nope": {},
+                    "not": {},
+                    "now": {},
+                    "wrong": {},
+                    "nop": {},
+                    "uhh": {},
+                    "hmm": {},
+                    "mayb": {},
+                    "see": {},
+                    "perhap": {},
+                    "possibl": {},
+                    "potenti": {},
+                    "we": {},
+                    "shall": {},
+                    "perchanc": {},
+                    "it": {},
+                    "could": {},
+                    "be": {},
+                    "idk": {},
+                    "know": {},
+                    "realli": {},
+                    "have": {},
+                    "clue": {},
+                    "idea": {},
+                    "dunno": {},
+                    "what": {},
+                    "wha": {},
+                    "did": {},
+                    "say": {},
+                    "are": {},
+                    "talk": {},
+                    "about": {},
+                    "huh": {},
+                    "again": {},
+                    "repeat": {},
+                    "were": {},
+                    "nonefeature": {}
+                  },
+                  {
+                    "yes": {
+                      "bias": 7.382196507,
+                      "weights": {
+                        "absolut": 5.115026474,
+                        "affirm": 5.115060806,
+                        "agre": 5.11507225,
+                        "alright": 5.115141392,
+                        "alrighti": 5.115268707,
+                        "by": 1.705682635,
+                        "all": 1.705682635,
+                        "mean": 1.705682635,
+                        "certain": 5.115413189,
+                        "confirm": 5.115667343,
+                        "correct": 5.115981102,
+                        "defin": 5.116353989,
+                        "defini": 5.116785049,
+                        "definit": 5.117273331,
+                        "fine": 5.117814064,
+                        "fo": 2.558307171,
+                        "sho": 2.558307171,
+                        "for": 0.625311673,
+                        "sure": 4.633421421,
+                        "fuck": -0.05473794,
+                        "yea": 5.166868687,
+                        "yes": 5.173931122,
+                        "glad": 5.127657413,
+                        "go": 2.562152147,
+                        "ahead": 2.562152147,
+                        "hell": -0.042815059,
+                        "yeah": 5.141153812,
+                        "id": 1.707770228,
+                        "love": 1.707770228,
+                        "to": 1.707770228,
+                        "im": -0.346736908,
+                        "down": 5.470261574,
+                        "inde": 5.128132343,
+                        "indubit": 5.129048824,
+                        "k": 5.129989624,
+                        "kk": 5.130950451,
+                        "no": -8.402784348,
+                        "doubt": 13.528525352,
+                        "ok": 5.131931782,
+                        "okay": 5.132822514,
+                        "oki": 5.09357357,
+                        "doki": 0.055080693,
+                        "oui": 5.132913589,
+                        "right": 5.183477402,
+                        "sound": 2.565363407,
+                        "good": 2.565363407,
+                        "thing": 0.665442467,
+                        "that": -0.107861944,
+                        "total": 5.11051178,
+                        "tote": 5.110816479,
+                        "uh": -0.072152928,
+                        "uhm": -0.073646218,
+                        "um": -0.075278051,
+                        "umm": -0.076923437,
+                        "veri": 5.619977474,
+                        "well": -0.515628994,
+                        "ya": 5.107800484,
+                        "ye": 5.107869625,
+                        "yeaa": 5.112167835,
+                        "yeaaa": 5.112093925,
+                        "yeaaaa": 5.11191082,
+                        "yee": 5.113854885,
+                        "yep": 5.113437653,
+                        "pleas": -0.083354108,
+                        "sir": -0.086878002,
+                        "yess": 5.113990784,
+                        "yessir": 5.113243103,
+                        "yesss": 5.112345219,
+                        "yessss": 5.111292839,
+                        "yezzir": 5.110074043,
+                        "yis": 5.108682632,
+                        "you": 0.568483412,
+                        "bet": 4.537949085,
+                        "yup": 5.106290817,
+                        "ok_hand": 5.104413033,
+                        "thumbsup": 5.10230875,
+                        "fals": -8.757933617,
+                        "nah": -9.883419991,
+                        "i": -2.639166832,
+                        "dont": -4.999613762,
+                        "think": -2.639166832,
+                        "so": -2.639166832,
+                        "thank": -2.116661072,
+                        "way": -1.493752718,
+                        "nono": -8.337061882,
+                        "nonono": -8.264201164,
+                        "noo": -8.196566582,
+                        "nooo": -8.1335783,
+                        "noooo": -8.074765205,
+                        "nooooo": -8.019458771,
+                        "noooooo": -7.967391968,
+                        "nooooooo": -7.918495178,
+                        "noooooooo": -7.872142792,
+                        "nooooooooo": -7.828128815,
+                        "nope": -7.786418915,
+                        "not": -11.918688774,
+                        "now": -1.705155849,
+                        "wrong": -7.744358063,
+                        "nop": -7.707051277,
+                        "uhh": -0.692306221,
+                        "mayb": -7.733431339,
+                        "see": -7.123348236,
+                        "perhap": -7.621380329,
+                        "possibl": -7.591819763,
+                        "potenti": -7.564486504,
+                        "we": -1.064681411,
+                        "shall": -0.987751126,
+                        "perchanc": -7.538720131,
+                        "it": -0.925468206,
+                        "could": -5.360768795,
+                        "be": -2.886497259,
+                        "idk": -7.499582291,
+                        "know": -2.601815224,
+                        "realli": -0.463518292,
+                        "dunno": -7.465562344,
+                        "what": -7.491407871,
+                        "wha": -7.434920788,
+                        "did": -0.133123115,
+                        "say": -3.81665659,
+                        "are": -0.31060642,
+                        "talk": -0.387536675,
+                        "about": -0.387536675,
+                        "huh": -7.419663429,
+                        "again": -3.702313423,
+                        "repeat": -2.474280834,
+                        "were": -0.07693024,
+                        "nonefeature": -7.402313232
+                      }
+                    },
+                    "no": {
+                      "bias": 1.777390567,
+                      "weights": {
+                        "absolut": -3.028586864,
+                        "affirm": -2.982148886,
+                        "agre": -2.935836077,
+                        "alright": -2.893496513,
+                        "alrighti": -2.850509882,
+                        "by": -1.10380578,
+                        "all": -1.10380578,
+                        "mean": -1.10380578,
+                        "certain": -2.801901579,
+                        "confirm": -2.762394428,
+                        "correct": -2.72629118,
+                        "defin": -2.689602137,
+                        "defini": -2.656275511,
+                        "definit": -2.622238636,
+                        "fine": -2.591329098,
+                        "fo": -1.418575048,
+                        "sho": -1.418575048,
+                        "sure": -4.972839832,
+                        "fuck": 0.477656901,
+                        "yea": -4.540903091,
+                        "yes": -4.444424152,
+                        "glad": -2.504980326,
+                        "go": -1.37245667,
+                        "ahead": -1.37245667,
+                        "hell": 0.354506284,
+                        "yeah": -3.877942801,
+                        "id": -0.920957029,
+                        "love": -0.920957029,
+                        "to": -0.920957029,
+                        "im": -2.151094437,
+                        "down": -0.553539634,
+                        "inde": -2.383448839,
+                        "indubit": -2.34829998,
+                        "k": -2.312812567,
+                        "kk": -2.278305531,
+                        "no": 10.321361542,
+                        "doubt": -12.037538528,
+                        "ok": -2.116324186,
+                        "okay": -2.088750362,
+                        "oki": -2.127853394,
+                        "doki": -0.611021936,
+                        "oui": -2.042191029,
+                        "right": -2.034024239,
+                        "sound": -1.115020752,
+                        "good": -1.115020752,
+                        "that": -0.707213819,
+                        "total": -1.990550399,
+                        "tote": -1.971771121,
+                        "uh": 0.318722218,
+                        "um": 0.316022366,
+                        "umm": 0.321905971,
+                        "veri": -0.021573784,
+                        "well": -2.205623627,
+                        "ya": -1.954295397,
+                        "ye": -1.938713431,
+                        "yeaa": -1.924699426,
+                        "yeaaa": -1.912100911,
+                        "yeaaaa": -1.900612831,
+                        "yee": -1.890176177,
+                        "yep": -1.880847335,
+                        "yess": -1.872278214,
+                        "yessir": -1.864517212,
+                        "yesss": -1.857466936,
+                        "yessss": -1.850941658,
+                        "yezzir": -1.845080018,
+                        "yis": -1.839618564,
+                        "you": -0.29352358,
+                        "bet": -1.417593241,
+                        "yup": -1.827364445,
+                        "ok_hand": -1.822789788,
+                        "thumbsup": -1.818580985,
+                        "fals": 10.715401649,
+                        "nah": 10.510913849,
+                        "i": -4.667618275,
+                        "dont": 10.779131889,
+                        "think": 1.815670371,
+                        "so": 1.815670371,
+                        "thank": 0.53228575,
+                        "way": 0.405949205,
+                        "nono": 10.622174263,
+                        "nonono": 10.619665146,
+                        "noo": 10.617070198,
+                        "nooo": 10.614382744,
+                        "noooo": 10.611592293,
+                        "nooooo": 10.608693123,
+                        "noooooo": 10.60567379,
+                        "nooooooo": 10.602523804,
+                        "noooooooo": 10.599233627,
+                        "nooooooooo": 10.595794678,
+                        "nope": 10.592191696,
+                        "not": 2.82164526,
+                        "now": 7.794476986,
+                        "wrong": 10.586905479,
+                        "nop": 10.58286953,
+                        "uhh": 0.32522136,
+                        "hmm": 0.328402102,
+                        "mayb": -4.86906004,
+                        "see": -3.283468723,
+                        "perhap": -3.972021103,
+                        "possibl": -3.888586283,
+                        "potenti": -3.807533026,
+                        "we": -1.099417925,
+                        "shall": -1.099417925,
+                        "perchanc": -3.716331005,
+                        "it": -1.00934422,
+                        "could": -2.804727077,
+                        "be": -2.228113174,
+                        "idk": -3.566372871,
+                        "know": -12.083699226,
+                        "realli": -0.72427696,
+                        "have": -5.521884918,
+                        "clue": -2.821530104,
+                        "idea": -2.700354815,
+                        "dunno": -3.35521102,
+                        "what": -3.590210676,
+                        "wha": -3.225331545,
+                        "did": -0.600716889,
+                        "say": -2.136106014,
+                        "are": -0.540708899,
+                        "talk": -0.540708899,
+                        "about": -0.540708899,
+                        "huh": -3.154729366,
+                        "again": -1.535389185,
+                        "repeat": -0.576614141,
+                        "nonefeature": -3.079399824
+                      }
+                    },
+                    "maybe": {
+                      "bias": 0.676587189,
+                      "weights": {
+                        "absolut": -1.428045154,
+                        "affirm": -1.393076539,
+                        "agre": -1.358445048,
+                        "alright": -1.327749848,
+                        "alrighti": -1.297438025,
+                        "by": -0.597508132,
+                        "all": -0.597508132,
+                        "mean": -0.597508132,
+                        "certain": -1.25807178,
+                        "confirm": -1.231288314,
+                        "correct": -1.20457375,
+                        "defin": -1.18011415,
+                        "defini": -1.156445742,
+                        "definit": -1.132953167,
+                        "fine": -1.111908317,
+                        "fo": -0.65538758,
+                        "sho": -0.65538758,
+                        "sure": -1.72973299,
+                        "fuck": -0.492034048,
+                        "yea": -1.505814195,
+                        "yes": -1.496766329,
+                        "glad": -1.075465798,
+                        "go": -0.630283058,
+                        "ahead": -0.630283058,
+                        "hell": -0.744147837,
+                        "yeah": -0.789464414,
+                        "id": -0.436483234,
+                        "love": -0.436483234,
+                        "to": -0.436483234,
+                        "im": -1.095373988,
+                        "down": -0.188603267,
+                        "inde": -1.029460907,
+                        "indubit": -1.011639357,
+                        "k": -0.993697464,
+                        "kk": -0.977399886,
+                        "no": -1.471127391,
+                        "ok": -0.961200237,
+                        "okay": -0.946031272,
+                        "oki": -0.984436393,
+                        "doki": -0.329935998,
+                        "oui": -0.919174194,
+                        "right": -0.905648649,
+                        "sound": -0.510204256,
+                        "good": -0.510204256,
+                        "that": -1.725100279,
+                        "total": -0.887170136,
+                        "tote": -0.874594033,
+                        "uh": 0.089192845,
+                        "um": 0.091501236,
+                        "umm": 0.094482638,
+                        "veri": -3.850897789,
+                        "well": 3.115648985,
+                        "ya": -0.802049458,
+                        "ye": -0.79241389,
+                        "yeaa": -0.783378422,
+                        "yeaaa": -0.774822116,
+                        "yeaaaa": -0.766757965,
+                        "yee": -0.756023824,
+                        "yep": -0.749184728,
+                        "yess": -0.742790639,
+                        "yessir": -0.736826956,
+                        "yesss": -0.73127532,
+                        "yessss": -0.726115108,
+                        "yezzir": -0.721324146,
+                        "yis": -0.716880083,
+                        "you": -2.255489349,
+                        "yup": -0.712760508,
+                        "ok_hand": -0.708943367,
+                        "thumbsup": -0.705400467,
+                        "fals": -0.70210135,
+                        "nah": -0.673017204,
+                        "i": 1.903890848,
+                        "dont": -12.427092552,
+                        "think": 4.942996979,
+                        "so": 4.942996979,
+                        "nono": -0.672829211,
+                        "nonono": -0.67262125,
+                        "noo": -0.672391772,
+                        "nooo": -0.672139823,
+                        "noooo": -0.671863735,
+                        "nooooo": -0.671562552,
+                        "noooooo": -0.671234727,
+                        "nooooooo": -0.670879424,
+                        "noooooooo": -0.670494974,
+                        "nooooooooo": -0.670080304,
+                        "nope": -0.669634402,
+                        "not": -1.72973299,
+                        "wrong": -0.669155777,
+                        "nop": -0.668643475,
+                        "uhh": 0.098032825,
+                        "mayb": 11.738835335,
+                        "see": 8.708390236,
+                        "perhap": 11.819224358,
+                        "possibl": 11.818684578,
+                        "potenti": 11.818033218,
+                        "we": 1.369380236,
+                        "shall": 1.741857171,
+                        "perchanc": 11.817173004,
+                        "it": 0.061960872,
+                        "could": 5.030797958,
+                        "be": 6.75587225,
+                        "idk": -1.886944413,
+                        "know": -1.807955384,
+                        "realli": -0.705880761,
+                        "have": -1.471127391,
+                        "clue": -0.820503354,
+                        "idea": -0.650623918,
+                        "dunno": -1.736454248,
+                        "what": -2.782917023,
+                        "wha": -1.65722549,
+                        "did": -0.297582,
+                        "say": -1.192696929,
+                        "are": -0.23281087,
+                        "talk": -0.605287969,
+                        "about": -0.605287969,
+                        "huh": -1.575033426,
+                        "again": -0.979537547,
+                        "repeat": -1.725100279,
+                        "were": -0.372477114,
+                        "nonefeature": -1.464982033
+                      }
+                    },
+                    "idk": {
+                      "bias": -0.53606565,
+                      "weights": {
+                        "absolut": -0.726123273,
+                        "affirm": -0.705210209,
+                        "agre": -0.68466872,
+                        "alright": -0.666477859,
+                        "alrighti": -0.648790359,
+                        "by": -0.350552976,
+                        "all": -0.350552976,
+                        "mean": -0.350552976,
+                        "certain": -0.623910546,
+                        "confirm": -0.608606458,
+                        "correct": -0.593443096,
+                        "defin": -0.57864809,
+                        "defini": -0.565442145,
+                        "definit": -0.552309155,
+                        "fine": -0.539265633,
+                        "fo": -0.33078447,
+                        "sho": -0.33078447,
+                        "for": -3.071273088,
+                        "sure": 1.010069251,
+                        "fuck": -0.787629962,
+                        "yea": -0.239282191,
+                        "yes": -0.205237433,
+                        "glad": -0.445028305,
+                        "go": -0.264347225,
+                        "ahead": -0.264347225,
+                        "hell": -0.761711717,
+                        "yeah": -0.118408509,
+                        "id": -0.183434442,
+                        "love": -0.183434442,
+                        "to": -0.183434442,
+                        "im": 0.455306947,
+                        "down": -2.395482302,
+                        "inde": -0.369557381,
+                        "indubit": -0.362527847,
+                        "k": -0.355487674,
+                        "kk": -0.3491745,
+                        "no": 0.608379066,
+                        "doubt": -1.048954844,
+                        "ok": -0.329756141,
+                        "okay": -0.323763132,
+                        "oki": -0.339438051,
+                        "doki": -0.112971701,
+                        "oui": -0.313109368,
+                        "right": -0.307660133,
+                        "sound": -0.177091807,
+                        "good": -0.177091807,
+                        "thing": -2.875809908,
+                        "that": -0.324113131,
+                        "total": -0.109118633,
+                        "tote": -0.106613994,
+                        "uh": -0.335018843,
+                        "um": -0.343277603,
+                        "umm": -0.419445127,
+                        "veri": -0.064752564,
+                        "well": -0.064752564,
+                        "ya": -0.10325969,
+                        "ye": -0.101038642,
+                        "yeaa": -0.09882956,
+                        "yeaaa": -0.096676618,
+                        "yeaaaa": -0.094734609,
+                        "yee": -0.092656985,
+                        "yep": -0.090725802,
+                        "yess": -0.08880312,
+                        "yessir": -0.086891018,
+                        "yesss": -0.085020497,
+                        "yessss": -0.083339848,
+                        "yezzir": -0.081662238,
+                        "yis": -0.079989702,
+                        "you": -0.932263315,
+                        "yup": -0.078324176,
+                        "ok_hand": -0.076667398,
+                        "thumbsup": -0.075021036,
+                        "fals": -0.07352414,
+                        "nah": -0.069184251,
+                        "i": 0.161514178,
+                        "dont": 4.830857754,
+                        "think": -3.34658742,
+                        "so": -3.34658742,
+                        "thank": -0.601870179,
+                        "way": -0.584338009,
+                        "nono": -0.039173014,
+                        "nonono": -0.038094204,
+                        "noo": -0.037035409,
+                        "nooo": -0.03603689,
+                        "noooo": -0.035127748,
+                        "nooooo": -0.034230985,
+                        "noooooo": -0.033347122,
+                        "nooooooo": -0.03247663,
+                        "noooooooo": -0.031619914,
+                        "nooooooooo": -0.030777324,
+                        "nope": -0.029949168,
+                        "not": 11.770023346,
+                        "now": -11.006230354,
+                        "uhh": -0.326881319,
+                        "hmm": -0.318844467,
+                        "we": -0.135328814,
+                        "could": -0.324113131,
+                        "idk": 13.027015686,
+                        "know": 8.056033134,
+                        "realli": 0.159419879,
+                        "have": 8.180107117,
+                        "clue": 4.092572212,
+                        "idea": 4.087534428,
+                        "dunno": 13.002258301,
+                        "what": -1.74544692,
+                        "wha": -0.860295236,
+                        "did": -0.339730114,
+                        "say": -0.82316792,
+                        "are": -0.268420041,
+                        "talk": -0.40374887,
+                        "about": -0.40374887,
+                        "huh": -0.800259054,
+                        "again": -0.516278982,
+                        "repeat": -0.324113131,
+                        "were": -0.135328814,
+                        "nonefeature": -0.748497903
+                      }
+                    },
+                    "what": {
+                      "bias": 0.588945734,
+                      "weights": {
+                        "absolut": -0.977862358,
+                        "affirm": -0.951385796,
+                        "agre": -0.926329672,
+                        "alright": -0.901598752,
+                        "alrighti": -0.879830062,
+                        "by": -0.443183094,
+                        "all": -0.443183094,
+                        "mean": -0.443183094,
+                        "certain": -0.849411428,
+                        "confirm": -0.829573095,
+                        "correct": -0.810714602,
+                        "defin": -0.791958332,
+                        "defini": -0.775262237,
+                        "definit": -0.758715332,
+                        "fine": -0.742743075,
+                        "fo": -0.446610361,
+                        "sho": -0.446610361,
+                        "for": -0.374621242,
+                        "sure": -0.658680975,
+                        "fuck": -0.427830875,
+                        "yea": -1.701551914,
+                        "yes": -1.670332193,
+                        "glad": -0.709202349,
+                        "go": -0.422257781,
+                        "ahead": -0.422257781,
+                        "hell": -0.556147873,
+                        "yeah": -0.569606245,
+                        "id": -0.294672638,
+                        "love": -0.294672638,
+                        "to": -0.294672638,
+                        "im": -0.410974681,
+                        "down": -0.410974681,
+                        "inde": -0.671586335,
+                        "indubit": -0.659127772,
+                        "k": -0.646869779,
+                        "kk": -0.635704279,
+                        "no": -1.455116391,
+                        "doubt": -0.11460945,
+                        "ok": -0.623488486,
+                        "okay": -0.613367498,
+                        "oki": -0.642741203,
+                        "doki": -0.222810954,
+                        "oui": -0.595339954,
+                        "right": -3.841375589,
+                        "sound": -0.339142412,
+                        "good": -0.339142412,
+                        "thing": -0.098376274,
+                        "that": 3.309003115,
+                        "total": -0.574757457,
+                        "tote": -0.574022651,
+                        "uh": -0.016919209,
+                        "uhm": -0.013770543,
+                        "um": -0.010863831,
+                        "umm": 0.402883559,
+                        "veri": -0.274132967,
+                        "well": -0.387121886,
+                        "ya": -0.573204935,
+                        "ye": -0.572491884,
+                        "yeaa": -0.571772158,
+                        "yeaaa": -0.571045458,
+                        "yeaaaa": -0.570311487,
+                        "yee": -0.568838894,
+                        "yep": -0.568084598,
+                        "yess": -0.567321777,
+                        "yessir": -0.566550136,
+                        "yesss": -0.565769196,
+                        "yessss": -0.5649786,
+                        "yezzir": -0.564177752,
+                        "yis": -0.563366294,
+                        "you": -1.732816815,
+                        "bet": -1.556526542,
+                        "yup": -0.562531471,
+                        "ok_hand": -0.56169194,
+                        "thumbsup": -0.560839593,
+                        "fals": -0.559973776,
+                        "nah": -0.559091985,
+                        "i": -0.185434729,
+                        "dont": -0.321531147,
+                        "think": -0.185434729,
+                        "so": -0.185434729,
+                        "thank": -0.782372057,
+                        "nono": -0.558195412,
+                        "nonono": -0.557284415,
+                        "noo": -0.556357503,
+                        "nooo": -0.55541414,
+                        "noooo": -0.554453731,
+                        "nooooo": -0.553475678,
+                        "noooooo": -0.552479565,
+                        "nooooooo": -0.551464498,
+                        "noooooooo": -0.550430238,
+                        "nooooooooo": -0.54937613,
+                        "nope": -0.548301697,
+                        "not": -0.278193861,
+                        "now": -0.278193861,
+                        "wrong": -0.54672581,
+                        "nop": -0.545600295,
+                        "mayb": -1.377583027,
+                        "see": -0.166908517,
+                        "perhap": -0.543624043,
+                        "possibl": -0.542436898,
+                        "potenti": -0.541225851,
+                        "we": -0.750100911,
+                        "shall": -0.053919021,
+                        "perchanc": -0.539990544,
+                        "it": -0.779890776,
+                        "could": 3.260764122,
+                        "be": -3.758926153,
+                        "idk": -0.534733653,
+                        "know": -0.221899122,
+                        "dunno": -0.533360541,
+                        "what": 11.583542824,
+                        "wha": 11.943282127,
+                        "did": -7.578861713,
+                        "say": 9.925436974,
+                        "are": 1.16524899,
+                        "talk": 0.469069451,
+                        "about": 0.469069451,
+                        "huh": 11.965108871,
+                        "again": 1.444099545,
+                        "repeat": 7.01969099,
+                        "were": -0.696181834,
+                        "nonefeature": -1.007512569
+                      }
+                    },
+                    "None": {
+                      "bias": 0.117316967,
+                      "weights": {
+                        "absolut": -0.282559156,
+                        "affirm": -0.274608731,
+                        "agre": -0.267590284,
+                        "alright": -0.260722607,
+                        "alrighti": -0.253938198,
+                        "by": -0.123294927,
+                        "all": -0.123294927,
+                        "mean": -0.123294927,
+                        "certain": -0.245460555,
+                        "confirm": -0.23954092,
+                        "correct": -0.233674988,
+                        "defin": -0.228507563,
+                        "defini": -0.223364905,
+                        "definit": -0.218251109,
+                        "fine": -0.213649169,
+                        "fo": -0.129347861,
+                        "sho": -0.129347861,
+                        "for": -0.109323367,
+                        "sure": -0.18493107,
+                        "fuck": -0.146703258,
+                        "yea": -0.172145292,
+                        "yes": -0.164783552,
+                        "glad": -0.202864707,
+                        "go": -0.121994779,
+                        "ahead": -0.121994779,
+                        "hell": -0.156271189,
+                        "yeah": -0.148215219,
+                        "id": -0.085325882,
+                        "love": -0.085325882,
+                        "to": -0.085325882,
+                        "im": -0.1186115,
+                        "down": -0.1186115,
+                        "inde": -0.191163287,
+                        "indubit": -0.187415019,
+                        "k": -0.183664203,
+                        "kk": -0.180068016,
+                        "no": -0.129461676,
+                        "doubt": -0.105680853,
+                        "ok": -0.175147399,
+                        "okay": -0.171848282,
+                        "oki": -0.181619957,
+                        "doki": -0.063309953,
+                        "oui": -0.166153654,
+                        "right": -0.173600271,
+                        "sound": -0.094925068,
+                        "good": -0.094925068,
+                        "thing": -0.0263464,
+                        "that": -0.047441017,
+                        "total": -0.158507898,
+                        "tote": -0.155956298,
+                        "uh": -0.028387317,
+                        "uhm": -0.026878191,
+                        "um": -0.025315916,
+                        "umm": -0.026265711,
+                        "veri": -0.088659592,
+                        "well": -0.088694155,
+                        "ya": -0.151182488,
+                        "ye": -0.148817867,
+                        "yeaa": -0.146422535,
+                        "yeaaa": -0.144266278,
+                        "yeaaaa": -0.142286792,
+                        "yee": -0.139392883,
+                        "yep": -0.137584642,
+                        "yess": -0.135913685,
+                        "yessir": -0.134283304,
+                        "yesss": -0.132756323,
+                        "yessss": -0.131321713,
+                        "yezzir": -0.129947886,
+                        "yis": -0.128645077,
+                        "you": -0.069522433,
+                        "bet": -0.069521971,
+                        "yup": -0.127014428,
+                        "ok_hand": -0.125889763,
+                        "thumbsup": -0.124845393,
+                        "fals": -0.123879969,
+                        "nah": -0.122910812,
+                        "i": -0.03936135,
+                        "dont": -0.072898284,
+                        "think": -0.03936135,
+                        "so": -0.03936135,
+                        "thank": -0.006503405,
+                        "way": -0.00613157,
+                        "nono": -0.121933952,
+                        "nonono": -0.121196814,
+                        "noo": -0.120545499,
+                        "nooo": -0.119954206,
+                        "noooo": -0.119440429,
+                        "nooooo": -0.118989736,
+                        "noooooo": -0.118602708,
+                        "nooooooo": -0.118275613,
+                        "noooooooo": -0.118008375,
+                        "nooooooooo": -0.117793366,
+                        "nope": -0.117626838,
+                        "not": -0.059551083,
+                        "now": -0.059551083,
+                        "wrong": -0.117480949,
+                        "nop": -0.117401466,
+                        "uhh": -0.014851786,
+                        "mayb": -0.117370002,
+                        "see": -0.038742039,
+                        "perhap": -0.117323831,
+                        "possibl": -0.117304832,
+                        "potenti": -0.117283031,
+                        "we": -0.039977025,
+                        "shall": -0.038707469,
+                        "perchanc": -0.117255084,
+                        "it": -0.013701811,
+                        "could": -0.058668088,
+                        "be": -0.058668088,
+                        "idk": -0.117219262,
+                        "know": -0.044396549,
+                        "dunno": -0.117183171,
+                        "what": -0.117136277,
+                        "wha": -0.117087349,
+                        "did": -4.59e-7,
+                        "say": -0.058558095,
+                        "talk": -0.001269558,
+                        "about": -0.001269558,
+                        "huh": -0.117033295,
+                        "again": -0.058674779,
+                        "were": -0.001269558,
+                        "nonefeature": 12.381745338
+                      }
+                    }
+                  }
+                ],
+                "trainOpts": {
+                  "iterations": 20000,
+                  "errorThresh": 0.00005,
+                  "fixedError": false,
+                  "deltaErrorThresh": 0.000001,
+                  "learningRate": 0.7,
+                  "momentum": 0.5,
+                  "leakyReluAlpha": 0.08,
+                  "maxDecimals": 9,
+                  "log": false
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "extraSentences": [
+      [
+        "en",
+        "absolutely"
+      ],
+      [
+        "en",
+        "affirmative"
+      ],
+      [
+        "en",
+        "agreed"
+      ],
+      [
+        "en",
+        "alright"
+      ],
+      [
+        "en",
+        "alrighty"
+      ],
+      [
+        "en",
+        "by all means"
+      ],
+      [
+        "en",
+        "certainly"
+      ],
+      [
+        "en",
+        "confirmed"
+      ],
+      [
+        "en",
+        "correct"
+      ],
+      [
+        "en",
+        "definately"
+      ],
+      [
+        "en",
+        "definiately"
+      ],
+      [
+        "en",
+        "definitely"
+      ],
+      [
+        "en",
+        "fine"
+      ],
+      [
+        "en",
+        "fine"
+      ],
+      [
+        "en",
+        "fo sho"
+      ],
+      [
+        "en",
+        "for sure"
+      ],
+      [
+        "en",
+        "fuck yea"
+      ],
+      [
+        "en",
+        "fuck yes"
+      ],
+      [
+        "en",
+        "gladly"
+      ],
+      [
+        "en",
+        "go ahead"
+      ],
+      [
+        "en",
+        "hell yea"
+      ],
+      [
+        "en",
+        "hell yeah"
+      ],
+      [
+        "en",
+        "hell yes"
+      ],
+      [
+        "en",
+        "id love to"
+      ],
+      [
+        "en",
+        "im down"
+      ],
+      [
+        "en",
+        "indeed"
+      ],
+      [
+        "en",
+        "indubitably"
+      ],
+      [
+        "en",
+        "k"
+      ],
+      [
+        "en",
+        "kk"
+      ],
+      [
+        "en",
+        "no doubt"
+      ],
+      [
+        "en",
+        "ok"
+      ],
+      [
+        "en",
+        "okay"
+      ],
+      [
+        "en",
+        "okie dokie"
+      ],
+      [
+        "en",
+        "okie"
+      ],
+      [
+        "en",
+        "oui"
+      ],
+      [
+        "en",
+        "right"
+      ],
+      [
+        "en",
+        "sounds good"
+      ],
+      [
+        "en",
+        "sure thing"
+      ],
+      [
+        "en",
+        "sure"
+      ],
+      [
+        "en",
+        "surely"
+      ],
+      [
+        "en",
+        "thats right"
+      ],
+      [
+        "en",
+        "totally"
+      ],
+      [
+        "en",
+        "totes"
+      ],
+      [
+        "en",
+        "uh yea"
+      ],
+      [
+        "en",
+        "uh yes"
+      ],
+      [
+        "en",
+        "uhm yea"
+      ],
+      [
+        "en",
+        "uhm yes"
+      ],
+      [
+        "en",
+        "um yea"
+      ],
+      [
+        "en",
+        "um yes"
+      ],
+      [
+        "en",
+        "umm yea"
+      ],
+      [
+        "en",
+        "umm yes"
+      ],
+      [
+        "en",
+        "very well"
+      ],
+      [
+        "en",
+        "ya"
+      ],
+      [
+        "en",
+        "ye"
+      ],
+      [
+        "en",
+        "yea"
+      ],
+      [
+        "en",
+        "yeaa"
+      ],
+      [
+        "en",
+        "yeaaa"
+      ],
+      [
+        "en",
+        "yeaaaa"
+      ],
+      [
+        "en",
+        "yeah"
+      ],
+      [
+        "en",
+        "yee"
+      ],
+      [
+        "en",
+        "yep"
+      ],
+      [
+        "en",
+        "yes please"
+      ],
+      [
+        "en",
+        "yes sir"
+      ],
+      [
+        "en",
+        "yes"
+      ],
+      [
+        "en",
+        "yess"
+      ],
+      [
+        "en",
+        "yessir"
+      ],
+      [
+        "en",
+        "yesss"
+      ],
+      [
+        "en",
+        "yessss"
+      ],
+      [
+        "en",
+        "yezzir"
+      ],
+      [
+        "en",
+        "yis"
+      ],
+      [
+        "en",
+        "you bet"
+      ],
+      [
+        "en",
+        "yup"
+      ],
+      [
+        "en",
+        "👌"
+      ],
+      [
+        "en",
+        "👍"
+      ],
+      [
+        "en",
+        "false"
+      ],
+      [
+        "en",
+        "fuck no"
+      ],
+      [
+        "en",
+        "hell nah"
+      ],
+      [
+        "en",
+        "hell no"
+      ],
+      [
+        "en",
+        "i dont think so"
+      ],
+      [
+        "en",
+        "nah"
+      ],
+      [
+        "en",
+        "no thank you"
+      ],
+      [
+        "en",
+        "no thanks"
+      ],
+      [
+        "en",
+        "no way"
+      ],
+      [
+        "en",
+        "no"
+      ],
+      [
+        "en",
+        "nono"
+      ],
+      [
+        "en",
+        "nonono"
+      ],
+      [
+        "en",
+        "noo"
+      ],
+      [
+        "en",
+        "noo"
+      ],
+      [
+        "en",
+        "nooo"
+      ],
+      [
+        "en",
+        "nooo"
+      ],
+      [
+        "en",
+        "noooo"
+      ],
+      [
+        "en",
+        "nooooo"
+      ],
+      [
+        "en",
+        "noooooo"
+      ],
+      [
+        "en",
+        "nooooooo"
+      ],
+      [
+        "en",
+        "noooooooo"
+      ],
+      [
+        "en",
+        "nooooooooo"
+      ],
+      [
+        "en",
+        "nope"
+      ],
+      [
+        "en",
+        "not now"
+      ],
+      [
+        "en",
+        "wrong"
+      ],
+      [
+        "en",
+        "nop"
+      ],
+      [
+        "en",
+        "um no"
+      ],
+      [
+        "en",
+        "uh no"
+      ],
+      [
+        "en",
+        "umm no"
+      ],
+      [
+        "en",
+        "uhh no"
+      ],
+      [
+        "en",
+        "hmm no"
+      ],
+      [
+        "en",
+        "maybe"
+      ],
+      [
+        "en",
+        "well see"
+      ],
+      [
+        "en",
+        "i think so"
+      ],
+      [
+        "en",
+        "perhaps"
+      ],
+      [
+        "en",
+        "possibly"
+      ],
+      [
+        "en",
+        "potentially"
+      ],
+      [
+        "en",
+        "we shall see"
+      ],
+      [
+        "en",
+        "perchance"
+      ],
+      [
+        "en",
+        "it could be"
+      ],
+      [
+        "en",
+        "could be"
+      ],
+      [
+        "en",
+        "uh maybe"
+      ],
+      [
+        "en",
+        "um maybe"
+      ],
+      [
+        "en",
+        "umm maybe"
+      ],
+      [
+        "en",
+        "uhh maybe"
+      ],
+      [
+        "en",
+        "im not sure"
+      ],
+      [
+        "en",
+        "idk"
+      ],
+      [
+        "en",
+        "i dont know"
+      ],
+      [
+        "en",
+        "not sure"
+      ],
+      [
+        "en",
+        "i dont really know"
+      ],
+      [
+        "en",
+        "i have no clue"
+      ],
+      [
+        "en",
+        "i have no idea"
+      ],
+      [
+        "en",
+        "dunno"
+      ],
+      [
+        "en",
+        "dont know"
+      ],
+      [
+        "en",
+        "not really sure"
+      ],
+      [
+        "en",
+        "what"
+      ],
+      [
+        "en",
+        "wha"
+      ],
+      [
+        "en",
+        "umm what"
+      ],
+      [
+        "en",
+        "what did you say"
+      ],
+      [
+        "en",
+        "what are you talking about"
+      ],
+      [
+        "en",
+        "huh"
+      ],
+      [
+        "en",
+        "say again"
+      ],
+      [
+        "en",
+        "could you repeat that"
+      ],
+      [
+        "en",
+        "what were we talking about"
+      ],
+      [
+        "en",
+        "what were we talking about again"
+      ]
+    ]
+  },
+  "nerManager": {
+    "settings": {
+      "builtins": []
+    },
+    "threshold": 0.8,
+    "builtins": [],
+    "namedEntities": {}
+  },
+  "slotManager": {},
+  "responses": {},
+  "actions": {},
+  "utteranceDict": {
+    "?": "help"
+  }
+}

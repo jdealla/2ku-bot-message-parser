@@ -1,0 +1,24 @@
+{
+  "author": "jdealla",
+  "bugs": {
+    "url": "https://github.com/jdealla/2ku-bot-message-parser"
+  },
+  "dependencies": {
+    "compromise": "^13.8.0",
+    "node-nlp": "^3.10.2",
+    "rf-logger": "^3.0.2"
+  },
+  "description": "a simple NLP tool for chatbots to extract data from user input",
+  "homepage": "https://github.com/jdealla/2ku-bot-message-parser#readme",
+  "license": "ISC",
+  "main": "index.js",
+  "name": "2ku-bot-message-parser",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jdealla/2ku-bot-message-parser.git"
+  },
+  "scripts": {
+    "test": "node test"
+  },
+  "version": "1.0.0"
+}
