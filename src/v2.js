@@ -47,6 +47,9 @@ function BotMessageParser(settings = {}) {
 	let namesList = settings.namesList || undefined;
 	let teamsList = settings.teamsList || undefined;
 	let playersList = settings.playersList || undefined;
+	let datesList = settings.datesList || undefined;
+	let yearsList = settings.yearsList || undefined;
+	let actionsList = settings.actionsList || undefined;
 	var commandPrefix = settings.commandPrefix || "!";
 	let botUserId = settings.botUserId || undefined
 	let model = settings.model;
@@ -185,7 +188,10 @@ function BotMessageParser(settings = {}) {
 		else this.commandOnly = false
 		if (namesList) this.names = findNames(this.clean, namesList)
 		if (teamsList) this.teams = findTeams(this.clean, teamsList)
-		if (playersList) this.playersList = findPlayers(this.clean, playersList)
+		if (playersList) this.players = findPlayers(this.clean, playersList)
+		if (datesList) this.dates = findDates(this.text, datesList)
+		if (yearsList) this.years = findYears(this.clean, yearsList)
+		if (actionsList) this.actions = findActions(this.clean, actionsList)
 
 		// push words to arguments
 		if (this.text) this.arguments = this.text.replace(/\s+/g, ' ').split(" ");
@@ -257,6 +263,9 @@ function BotMessageParser(settings = {}) {
 			names: this.names,
 			teams: this.teams,
 			players: this.players,
+			dates: this.dates,
+			years: this.years,
+			actions: this.actions,
 			hasIntent: this.hasIntent,
 			intent: this.intent,
 			numEntities: this.numEntities,
@@ -336,7 +345,6 @@ function findTeams(string, teamsList) {
 	teamsList.forEach(name => {
 		name = name.toLowerCase();
 		let match
-		console.log(name);
 		if (string.match(name)) {
 			match = string.match(name)[0]
 			matches.push(match)
@@ -353,11 +361,68 @@ function findPlayers(string, playersList) {
 	playersList.forEach(name => {
 		name = name.toLowerCase();
 		let match
-		console.log(name);
 		if (string.match(name)) {
 			match = string.match(name)[0]
 			matches.push(match)
 		}
+	})
+	return matches
+};
+
+function findDates(string, datesList) {
+	if (!Array.isArray(datesList)) throw new Error("datesList must be an array")
+	if (!string) return
+	string = string.toLowerCase();
+	let matches = []
+	datesList.forEach(name => {
+		let match
+		const strArr = string.split(' ');
+		strArr.forEach( str => {
+			str = str.trim();
+			if (str.match(name)) {
+				match = str.match(name)[0]
+				matches.push(match)
+			}
+		})
+	})
+	return matches
+};
+
+function findYears(string, yearsList) {
+	if (!Array.isArray(yearsList)) throw new Error("yearsList must be an array")
+	if (!string) return
+	string = string.toLowerCase();
+	let matches = []
+	yearsList.forEach(name => {
+		let match
+		const strArr = string.split(' ');
+		strArr.forEach( str => {
+			str = str.trim();
+			if (str.match(name)) {
+				match = str.match(name)[0]
+				matches.push(match)
+			}
+		})
+	})
+	return matches
+};
+
+function findActions(string, actionsList) {
+	console.log(actionsList)
+	if (!Array.isArray(actionsList)) throw new Error("actionsList must be an array")
+	if (!string) return
+	string = string.toLowerCase();
+	let matches = []
+	actionsList.forEach(name => {
+		let match
+		const strArr = string.split(' ');
+		strArr.forEach( str => {
+			str = str.trim();
+			if (str.match(name)) {
+				match = str.match(name)[0]
+				matches.push(match)
+			}
+		})
 	})
 	return matches
 };
