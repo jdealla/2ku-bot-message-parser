@@ -408,7 +408,6 @@ function findYears(string, yearsList) {
 };
 
 function findActions(string, actionsList) {
-	console.log(actionsList)
 	if (!Array.isArray(actionsList)) throw new Error("actionsList must be an array")
 	if (!string) return
 	string = string.toLowerCase();
