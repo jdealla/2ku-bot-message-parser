@@ -12,7 +12,7 @@
   "homepage": "https://github.com/jdealla/2ku-bot-message-parser#readme",
   "license": "ISC",
   "main": "index.js",
-  "name": "2ku-bot-message-parser",
+  "name": "@jdealla/2ku-bot-message-parser",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jdealla/2ku-bot-message-parser.git"
@@ -20,5 +20,6 @@
   "scripts": {
     "test": "node test"
   },
-  "version": "1.0.3"
+  "version": "1.0.3",
+  "devDependencies": {}
 }
