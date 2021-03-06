@@ -417,7 +417,9 @@ function findActions(string, actionsList) {
 		const strArr = string.split(' ');
 		strArr.forEach( str => {
 			str = str.trim();
-			if (str.match(name)) {
+			if (name.length === 1 && name === str) {
+				matches.push(str);
+			} else if (name.length > 1 && str.match(name)) {
 				match = str.match(name)[0]
 				matches.push(match)
 			}
