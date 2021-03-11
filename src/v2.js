@@ -49,6 +49,7 @@ function BotMessageParser(settings = {}) {
 	let playersList = settings.playersList || undefined;
 	let datesList = settings.datesList || undefined;
 	let yearsList = settings.yearsList || undefined;
+	let overallsList = settings.overallsList || undefined;
 	let actionsList = settings.actionsList || undefined;
 	var commandPrefix = settings.commandPrefix || "!";
 	let botUserId = settings.botUserId || undefined
@@ -191,6 +192,7 @@ function BotMessageParser(settings = {}) {
 		if (playersList) this.players = findPlayers(this.clean, playersList)
 		if (datesList) this.dates = findDates(this.text, datesList)
 		if (yearsList) this.years = findYears(this.clean, yearsList)
+		if (overallsList) this.overalls = findOveralls(this.clean, overallsList)
 		if (actionsList) this.actions = findActions(this.clean, actionsList)
 
 		// push words to arguments
@@ -265,6 +267,7 @@ function BotMessageParser(settings = {}) {
 			players: this.players,
 			dates: this.dates,
 			years: this.years,
+			overalls: this.overalls,
 			actions: this.actions,
 			hasIntent: this.hasIntent,
 			intent: this.intent,
@@ -394,6 +397,25 @@ function findYears(string, yearsList) {
 	string = string.toLowerCase();
 	let matches = []
 	yearsList.forEach(name => {
+		let match
+		const strArr = string.split(' ');
+		strArr.forEach( str => {
+			str = str.trim();
+			if (str.match(name)) {
+				match = str.match(name)[0]
+				matches.push(match)
+			}
+		})
+	})
+	return matches
+};
+
+function findOveralls(string, overallsList) {
+	if (!Array.isArray(overallsList)) throw new Error("overallsList must be an array")
+	if (!string) return
+	string = string.toLowerCase();
+	let matches = []
+	overallsList.forEach(name => {
 		let match
 		const strArr = string.split(' ');
 		strArr.forEach( str => {
