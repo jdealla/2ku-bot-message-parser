@@ -351,11 +351,11 @@ function findTeams(string, teamsList) {
 	teamsList.forEach(name => {
 		name = name.toLowerCase();
 		let match
-		if (string.match(name)) {
-			match = string.match(name)[0]
+		if (string.split(' ').includes(name)) {
+			match = name;
 			matches.push(match)
 		}
-	})
+	});
 	return matches
 };
 
@@ -457,18 +457,13 @@ function findActions(string, actionsList) {
 	string = string.toLowerCase();
 	let matches = []
 	actionsList.forEach(name => {
+		name = name.toLowerCase();
 		let match
-		const strArr = string.split(' ');
-		strArr.forEach( str => {
-			str = str.trim();
-			if (name.length === 1 && name === str) {
-				matches.push(str);
-			} else if (name.length > 1 && str.match(name)) {
-				match = str.match(name)[0]
-				matches.push(match)
-			}
-		})
-	})
+		if (string.split(' ').includes(name)) {
+			match = name;
+			matches.push(match)
+		}
+	});
 	return matches
 };
 
